@@ -37,7 +37,7 @@ def performance_capacity_monitoring(n1, ip, x_api_session):
      x_api_session : Session to be used
 
     """
-    os.system("cls")
+    cls()
     SelectManagedSystem_obj = SelectManagedSystem.SelectManagedSystem()
     managedsystem_object = SelectManagedSystem_obj.\
                           get_managedsystem_uuid(ip, x_api_session)
@@ -67,7 +67,7 @@ def performance_capacity_monitoring(n1, ip, x_api_session):
                                                             set_managedsystempcmpreference()
                     
                 elif x == 3:
-                    os.system("cls")
+                    cls()
                     break
                 else:
                             print("\nTry again using valid option")

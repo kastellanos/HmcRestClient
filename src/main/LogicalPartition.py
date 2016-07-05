@@ -60,7 +60,7 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
      x_api_session : session to be used
 
     """
-    os.system("cls")
+    cls()
     n = n1
     if n == 1:
         #Logical Partition operations
@@ -188,13 +188,13 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                                whether the partitions are in running or not activated state before updating it")
                  
             elif x == 7:
-                      os.system("cls")
+                      cls()
                       return 1
             elif x == 8:
-                      os.system("cls")
+                      cls()
                       return 2
             elif x == 9:
-                      os.system("cls")
+                      cls()
                       return 3
             elif x == 10:
                  print(open(directory+"/help/LogicalPartition/LogicalPartitionOperations.txt").read())
@@ -284,13 +284,13 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                               print("\nTry again using valid option")
                           
                  elif x1 == 4:
-                      os.system("cls")
+                      cls()
                       return 1
                  elif x1 == 5:
-                      os.system("cls")
+                      cls()
                       return 2
                  elif x1 == 6:
-                      os.system("cls")
+                      cls()
                       return 3
                  elif x1 == 7:
                       print(open(directory+"/help/LogicalPartitionProfile.txt").read())
@@ -343,13 +343,13 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                                                                               logicalpartition_id ,
                                                                               x_api_session)
             elif x1 == 3:
-                      os.system("cls")
+                      cls()
                       return 1
             elif x1 == 4:
-                      os.system("cls")
+                      cls()
                       return 2
             elif x1 == 5:
-                      os.system("cls")
+                      cls()
                       return 3
             elif x1 == 6:
                  print(open(directory+"/help/LogicalPartition/ClientNetworkAdapter.txt").read())
@@ -403,13 +403,13 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                                                                    x_api_session)
                        
             elif x1 == 3:
-                      os.system("cls")
+                      cls()
                       return 1
             elif x1 == 4:
-                      os.system("cls")
+                      cls()
                       return 2
             elif x1 == 5:
-                      os.system("cls")
+                      cls()
                       return 3
             elif x1 == 6:
                  print(open(directory+"/help/LogicalPartition/VirtualSCSIAdapter.txt").read())
@@ -464,13 +464,13 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                                                                                                lpar_id,
                                                                                                x_api_session)
             elif x1 == 3:
-                      os.system("cls")
+                      cls()
                       return 1
             elif x1 == 4:
-                      os.system("cls")
+                      cls()
                       return 2
             elif x1 == 5:
-                      os.system("cls")
+                      cls()
                       return 3
             elif x1 == 6:
                  print(open(directory+"/help/LogicalPartition/VirtualFibreChannelAdapter.txt").read())
@@ -569,13 +569,13 @@ def logicalpartition_children(n1, managedsystem_uuid, ip, x_api_session):
                          print(e)
                          
             elif x1 == 5:
-                      os.system("cls")
+                      cls()
                       return 1
             elif x1 == 6:
-                      os.system("cls")
+                      cls()
                       return 2
             elif x1 == 7:
-                      os.system("cls")
+                      cls()
                       return 3
             elif x1 == 8:
                  print(open(directory+"/help/LogicalPartition/SRIOVEthernetLogicalPort.txt").read())

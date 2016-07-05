@@ -51,7 +51,7 @@ def managedsystem_children(choice, ip, x_api_session):
      x_api_session : session to be used
 
     """
-    os.system("cls")
+    cls()
     st = 'y'
     SelectManagedSystem_obj = SelectManagedSystem.SelectManagedSystem()
     managedsystem_object = SelectManagedSystem_obj.\
@@ -98,10 +98,10 @@ def managedsystem_children(choice, ip, x_api_session):
                     removeconnection.remove_connection_managedsystem()
                     
                 elif x == 5:
-                    os.system("cls")
+                    cls()
                     return True
                 elif x == 6:
-                    os.system("cls")
+                    cls()
                     return False
                 elif x == 7:
                     print(open(directory+"/help/ManagedSystem/ManagedSystemOperations.txt").read())
@@ -166,10 +166,10 @@ def managedsystem_children(choice, ip, x_api_session):
                     except (TypeError, AttributeError):
                           log_object.log_warn("No VirtualSwitches are Available")
                 elif x1 == 4:
-                    os.system("cls")
+                    cls()
                     return True
                 elif x1 == 5:
-                    os.system("cls")
+                    cls()
                     return False
                 elif x1 == 6:
                     print(open(directory+"/help/ManagedSystem/VirtualSwitch.txt").read())
@@ -240,10 +240,10 @@ def managedsystem_children(choice, ip, x_api_session):
                     else :
                         log_object.log_error("Error in VirtualNetwork modification.")
                 elif x1 == 4:
-                    os.system("cls")
+                    cls()
                     return True
                 elif x1 == 5:
-                    os.system("cls")
+                    cls()
                     return False
                 elif x1 == 6:
                     print(open(directory+"/help/ManagedSystem/VirtualNetwork.txt").read())
@@ -358,10 +358,10 @@ def managedsystem_children(choice, ip, x_api_session):
                     except IndexError :
                               print("\nTry again using valid option")
                 elif x1 == 4:
-                    os.system("cls")
+                    cls()
                     return True
                 elif x1 == 5:
-                    os.system("cls")
+                    cls()
                     return False
                 elif x1 == 6:
                     print(open(directory+"/help/ManagedSystem/NetworkBridge.txt").read())
@@ -382,10 +382,10 @@ def managedsystem_children(choice, ip, x_api_session):
                 #select any Logical partition operations
                 n = int(print_obj.print_on_screen(print_list))
                 if n == 7:
-                    os.system("cls")
+                    cls()
                     return True
                 elif n == 8:
-                    os.system("cls")
+                    cls()
                     return False
                 elif n > 0 and n < 7:
                     k = logicalpartition_children(n,
@@ -418,10 +418,10 @@ def managedsystem_children(choice, ip, x_api_session):
                 #select any VirtualIOServer children
                 n = int(print_obj.print_on_screen(print_list))
                 if n == 6:
-                    os.system("cls")
+                    cls()
                     return True
                 elif n == 7:
-                    os.system("cls")
+                    cls()
                     return False
                 elif n > 0 and n < 6:
                     k = virtualioserver_children(n,
@@ -430,10 +430,10 @@ def managedsystem_children(choice, ip, x_api_session):
                     if k == 1:
                        pass
                     elif k == 2:
-                        os.system("cls")
+                        cls()
                         return True
                     elif k == 3:
-                        os.system("cls")
+                        cls()
                         return False
                 elif n == 8:
                     print(open(directory+"/help/VirtualIOServer/1VirtualIOServer.txt").read())
@@ -481,10 +481,10 @@ def managedsystem_children(choice, ip, x_api_session):
                    else :
                         log_object.log_warn("No SRIOV physical ports are available")
                elif n == 3:
-                 os.system("cls")
+                 cls()
                  return True
                elif n == 4:
-                 os.system("cls")
+                 cls()
                  return False
                elif n == 8:
                     print(open(directory+"/help/ManagedSystem/SRIOVPhysicalPort.txt").read())              

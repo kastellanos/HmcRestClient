@@ -52,7 +52,7 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
 
     """
     
-    os.system("cls")
+    cls()
     st = 'y'
     n = n1
     
@@ -156,13 +156,13 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
                              except IndexError :
                                  print("\nTry again using valid option")
                 elif x == 6:
-                    os.system("cls")
+                    cls()
                     return 1
                 elif x == 7:
-                    os.system("cls")
+                    cls()
                     return 2
                 elif x == 8:
-                    os.system("cls")
+                    cls()
                     return 3
                 elif x == 9:
                     print(open(directory+"/help/VirtualIOServer/VirtualIOServerOperations.txt").read())
@@ -244,13 +244,13 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
                            print("\nTry again using valid option")
                     
             elif x1 == 4:
-                    os.system("cls")
+                    cls()
                     return 1
             elif x1 == 5:
-                    os.system("cls")
+                    cls()
                     return 2
             elif x1 == 6:
-                    os.system("cls")
+                    cls()
                     return 3
             elif x1 == 6:
                 print(open(directory+"/help/LogicalPartitionProfile.txt").read())
@@ -331,13 +331,13 @@ def virtualioserver_children(n1, managedsystem_uuid, ip, x_api_session):
                 back_to_menu()
                 
             elif x1 == 4:
-                    os.system("cls")
+                    cls()
                     return 1
             elif x1 == 5:
-                    os.system("cls")
+                    cls()
                     return 2
             elif x1 == 6:
-                    os.system("cls")
+                    cls()
                     return 3
             elif x1 == 7:
                 print(open(directory+"/help/VirtualIOServer/VolumeGroup.txt").read())

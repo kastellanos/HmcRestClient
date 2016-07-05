@@ -44,7 +44,7 @@ def menu():
                 managementconsole_object.print_managementconsole_attributes(object_console[0])
                 back_to_menu()            
             elif client_choice == 2:
-                os.system("cls")
+                cls()
                 while True:
                     print ("\n\n", "ManagedSystem Menu".center(50))
                     print_list = ['Managed System Operations', 'VirtualSwitch',
@@ -54,12 +54,12 @@ def menu():
                     # select any managed system children
                     choice = int(print_obj.print_on_screen(print_list))
                     if choice == 8:
-                        os.system("cls")
+                        cls()
                         break
                     elif choice > 0 and choice < 9:
                         boolean = managedsystem_children(choice, client.ip, client.x_api_session)
                         if not boolean:
-                            os.system("cls")
+                            cls()
                             break
                     elif choice == 9:
                         print(open(directory+"/help/ManagedSystem/1ManagedSystem.txt").read())
@@ -69,16 +69,16 @@ def menu():
                     else:
                         print("\nTry again using valid option")
                         back_to_menu()
-                    os.system("cls")                
+                    cls()
             elif client_choice == 3:
-                os.system("cls")
+                cls()
                 while True:
                     print ("\n\n", "Cluster".center(50))
                     print_list = ['List', 'create', 'Modify', 'Delete',
                                   'Return to MainMenu','Help','Exit']
                     choice = int(print_obj.print_on_screen(print_list))
                     if choice == 5:
-                        os.system("cls")
+                        cls()
                         break
                     elif choice > 0 and choice < 5:
                          cluster_menu(choice, client.ip, client.x_api_session)
@@ -90,9 +90,9 @@ def menu():
                     else:
                         print("\nTry again using valid option")
                         back_to_menu()
-                    os.system("cls")
+                    cls()
             elif client_choice == 4:
-                os.system("cls")
+                cls()
                 while True:
                     print ("\n\n", "Performance and Capacity Monitoring".center(50))
                     print_list = ['ManagedSystemPcmPreference', 'LongTermMonitor',
@@ -101,7 +101,7 @@ def menu():
                     # select any performance_capacity_monitoring children
                     choice = int(print_obj.print_on_screen(print_list))
                     if choice == 5:
-                        os.system("cls")
+                        cls()
                         break
                     elif choice == 6:
                         print(open(directory+"/help/PerformanceCapacityMonitoring.txt").read())
@@ -113,7 +113,7 @@ def menu():
                     else:
                         print("\nTry again using valid option")
                         back_to_menu()
-                    os.system("cls")                
+                    cls()
             elif client_choice == 5:
                 client.logoff_request()
                 return

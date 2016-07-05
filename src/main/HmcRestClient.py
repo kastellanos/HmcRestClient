@@ -24,7 +24,7 @@ from src.management_console import ListManagementConsole
 import sys
 import os
 import time
-import msvcrt
+import getch
 import warnings
 import xml.etree.ElementTree as etree
 log_object =HMCClientLogger.HMCClientLogger(__name__)
@@ -94,7 +94,7 @@ def HMC_Help():
     """
     Gives the overview of each operation
     """
-    os.system("cls")
+    cls()
     while True:
         print ("\n\n","Help".center(50))
         print_list = ["ManagedSystem","LogicalPartition","VirtualIOServer","Cluster","Performance Capaity Monitoring","Return to Main Menu"]
@@ -120,13 +120,16 @@ def HMC_Help():
         elif choice == 5:
              print(open(directory+"/help/PerformanceCapacityMonitoring.txt").read())
         elif choice == 6:
-             os.system("cls")
+             cls()
              return
         else:
             print("\nTry using Valid option")
         back_to_menu()
 
+def cls():
+    os.system( 'cls' if os.name=='nt' else 'clear' )
+
 def back_to_menu():
     print("\nPress ENTER to Proceed ")
-    msvcrt.getch()
-    os.system("cls")
+    getch.getch()
+    cls()
