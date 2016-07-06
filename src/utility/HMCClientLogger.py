@@ -38,6 +38,7 @@ class HMCClientLogger:
                                 self.logger_module.addHandler(consolehandler)
                                 
                 def log_debug(self,message):
+                                print( message )
                                 self.logger_module.debug(message)
                 def log_info(self,message):
                                 self.logger_module.info(message)

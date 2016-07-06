@@ -48,17 +48,21 @@ class ListModule:
          #for ManagementConsole the uuid is none and for other types the uri is appended with roots uuid
          obj_list = []
          xml_object = None
+         log_object.log_debug("Set header")
          headers_obj = HmcHeaders.HmcHeaders(service)
          ns = headers_obj.ns
          request_obj = HTTPClient.HTTPClient(service, ip, root, content_type, session_id)
          if uuid == None:
+             log_object.log_debug("Start Http GET")
              request_obj.HTTPGet()
+             log_object.log_debug("Finish Http GET")
          else:
              request_obj.HTTPGet(append=str(uuid)+"/"+Resource)
          if request_obj.response_b:
              root = etree.fromstring(request_obj.response.text)
              entries = root.findall(".//%s:%s"%(Resource,Resource),
                                  namespaces={"%s" %(Resource): ns["xmlns"]})
+             log_object.log_debug("Entries size"+str(len(entries)))
              for entry in entries:
                  if entry.getchildren() != []:
                      xmlstring = etree.tostring(entry)
