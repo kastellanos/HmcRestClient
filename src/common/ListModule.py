@@ -62,10 +62,12 @@ class ListModule:
              root = etree.fromstring(request_obj.response.text)
              entries = root.findall(".//%s:%s"%(Resource,Resource),
                                  namespaces={"%s" %(Resource): ns["xmlns"]})
-             self.log_object.log_debug("Entries size"+str(len(entries)))
+             self.log_object.log_debug("Entries size: "+str(len(entries)))
+             self.log_object.log_debug("Start Process entries" )
              for entry in entries:
                  if entry.getchildren() != []:
                      xmlstring = etree.tostring(entry)
                      xml_object = UOM.CreateFromDocument(xmlstring)
                      obj_list.append(xml_object)
+             self.log_object.log_debug("End Process entries")
              return obj_list
