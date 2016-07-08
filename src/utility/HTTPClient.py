@@ -63,6 +63,7 @@ class HTTPClient:
                     
                 else:
                     url = kwargs["url"]
+            print(url)
             self.response = requests.get(url, headers=self.head,
                                          verify=False)
             # call the verify function to check with the response status

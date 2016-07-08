@@ -38,8 +38,11 @@ class HmcRestClient:
         Initialise the process by calling logon request and
         returns the hmc ip address, current X_API_Session 
 
-        """
+
         log_object.log_debug("logon started")
+        print_list = ['List managed HMC', 'Register managed HMC', 'Remove managed HMC',
+                      'Active managed HMC']
+        auth_choice = int(print_obj.print_on_screen(print_list))"""
         logon_obj = LogonRequest.Logon()
         self.ip,self.x_api_session = logon_obj.LogonRequest()
         global ip,x_api_session
