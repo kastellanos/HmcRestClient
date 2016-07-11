@@ -23,6 +23,8 @@ from src.main.PerformanceCapacityMonitor import *
 import sys
 import os
 
+
+
 if not HardwareManagementConsole.table_exists():
     HardwareManagementConsole.create_table()
 

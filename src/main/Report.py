@@ -8,6 +8,12 @@ from src.logical_partition.LogicalPartition import LogicalPartition
 directory = os.path.dirname(os.path.dirname(__file__))
 from src.utility.ExcelUtil import ExcelUtil
 def report_children(credentials):
+    if not LogicalPartition.table_exists():
+        LogicalPartition.create_table()
+    else:
+        LogicalPartition.drop_table()
+        LogicalPartition.create_table()
+
     cls()
     ip = str(credentials.ip)
     logon_obj = LogonRequest.Logon()
@@ -91,52 +97,83 @@ def popullate_database( name, ip, x_api_session ):
     print( object_list )
     print("Start object list")
     for i in range(0, len(object_list)):
+
         ManagedSystem.create(id=object_list[i].Metadata.Atom.AtomID.value(),
                                        name=object_list[i].SystemName.value(),
                                        machine_type=object_list[i].MachineTypeModelAndSerialNumber.MachineType.value(),
                                        model=object_list[i].MachineTypeModelAndSerialNumber.Model.value(),
                                        associated_hmc=name
                                        )
-    for i in ManagedSystem.select():
+
+    ms_list = ManagedSystem.select()
+    for i in ms_list:
+
         logicalpartition_object = ListLogicalPartition.ListLogicalPartition()
         lpar_object_list = logicalpartition_object.list_LogicalPartition(ip, i.id, x_api_session)
-        for j in lpar_object_list:
-            if j.HasDedicatedProcessors.value():
-                LogicalPartition.create(id=j.PartitionID.value(),
-                                        name=j.PartitionName.value(),
-                                        type=j.PartitionType.value(),
-                                        state=j.PartitionState.value(),
-                                        uuid=j.PartitionUUID.value(),
-                                        associated_managed_system=j.AssociatedManagedSystem.href,
-                                        maximum_memory=j.MaximumMemory.value(),
-                                        desired_memory=j.DesiredMemory.value(),
-                                        minimum_memory=j.MinimumMemory.value(),
-                                        has_dedicated_processors=j.HasDedicatedProcessors.value(),
-                                        maximum_processors=j.PartitionProcessorConfiguration.DedicatedProcessorConfiguration.MaximumProcessors.value(),
-                                        desired_processors=j.PartitionProcessorConfiguration.DedicatedProcessorConfiguration.DesiredProcessors.value(),
-                                        minimum_processors=j.PartitionProcessorConfiguration.DedicatedProcessorConfiguration.MinimumProcessors.value(),
-                                        maximum_processing_units=0,
-                                        desired_processing_units=0,
-                                        minimum_processing_units=0
-                                        )
-            else:
-                LogicalPartition.create(id=j.PartitionID.value(),
-                                        name=j.PartitionName.value(),
-                                        type=j.PartitionType.value(),
-                                        state=j.PartitionState.value(),
-                                        uuid=j.PartitionUUID.value(),
-                                        associated_managed_system=j.AssociatedManagedSystem.href,
-                                        maximum_memory=j.MaximumMemory.value(),
-                                        desired_memory=j.DesiredMemory.value(),
-                                        minimum_memory=j.MinimumMemory.value(),
-                                        has_dedicated_processors=j.HasDedicatedProcessors.value(),
-                                        maximum_processors=0,
-                                        desired_processors=0,
-                                        minimum_processors=0,
-                                        maximum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MaximumProcessingUnits.value(),
-                                        desired_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.DesiredProcessingUnits.value(),
-                                        minimum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MinimumProcessingUnits.value()
-                                        )
+        if lpar_object_list is not None:
+            for j in lpar_object_list:
+                lpar_cpu = j.PartitionProcessorConfiguration.HasDedicatedProcessors.value()
+                if lpar_cpu:
+                    uuidMS = j.AssociatedManagedSystem.href.split('/')
+                    print( uuidMS)
+                    LogicalPartition.create(id=j.PartitionID.value(),
+                                            name=j.PartitionName.value(),
+                                            type=j.PartitionType.value(),
+                                            state=j.PartitionState.value(),
+                                            uuid=j.PartitionUUID.value(),
+                                            associated_managed_system=uuidMS[len(uuidMS)-1],
+                                            maximum_memory=j.PartitionMemoryConfiguration.MaximumMemory.value(),
+                                            desired_memory=j.PartitionMemoryConfiguration.DesiredMemory.value(),
+                                            minimum_memory=j.PartitionMemoryConfiguration.MinimumMemory.value(),
+                                            has_dedicated_processors=j.PartitionProcessorConfiguration.HasDedicatedProcessors.value(),
+                                            maximum_processors=j.PartitionProcessorConfiguration.DedicatedProcessorConfiguration.MaximumProcessors.value(),
+                                            desired_processors=j.PartitionProcessorConfiguration.DedicatedProcessorConfiguration.DesiredProcessors.value(),
+                                            minimum_processors=j.PartitionProcessorConfiguration.DedicatedProcessorConfiguration.MinimumProcessors.value(),
+                                            maximum_processing_units=0,
+                                            desired_processing_units=0,
+                                            minimum_processing_units=0
+                                            )
+
+                else:
+                    uuidMS = j.AssociatedManagedSystem.href.split('/')
+                    print(uuidMS)
+                    LogicalPartition.create(id=j.PartitionID.value(),
+                                            name=j.PartitionName.value(),
+                                            type=j.PartitionType.value(),
+                                            state=j.PartitionState.value(),
+                                            uuid=j.PartitionUUID.value(),
+                                            associated_managed_system=uuidMS[len(uuidMS)-1],
+                                            maximum_memory=j.PartitionMemoryConfiguration.MaximumMemory.value(),
+                                            desired_memory=j.PartitionMemoryConfiguration.DesiredMemory.value(),
+                                            minimum_memory=j.PartitionMemoryConfiguration.MinimumMemory.value(),
+                                            has_dedicated_processors=j.PartitionProcessorConfiguration.HasDedicatedProcessors.value(),
+                                            maximum_processors=0,
+                                            desired_processors=0,
+                                            minimum_processors=0,
+                                            maximum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MaximumProcessingUnits.value(),
+                                            desired_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.DesiredProcessingUnits.value(),
+                                            minimum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MinimumProcessingUnits.value()
+                                            )
+
+
+            """LogicalPartition.create(id=j.PartitionID.value(),
+                                    name=j.PartitionName.value(),
+                                    type=j.PartitionType.value(),
+                                    state=j.PartitionState.value(),
+                                    uuid=j.PartitionUUID.value(),
+                                    associated_managed_system=j.AssociatedManagedSystem.href,
+                                    maximum_memory=j.PartitionMemoryConfiguration.MaximumMemory.value(),
+                                    desired_memory=j.PartitionMemoryConfiguration.DesiredMemory.value(),
+                                    minimum_memory=j.PartitionMemoryConfiguration.MinimumMemory.value(),
+                                    has_dedicated_processors=j.PartitionProcessorConfiguration.HasDedicatedProcessors.value(),
+                                    maximum_processors=0,
+                                    desired_processors=0,
+                                    minimum_processors=0,
+                                    maximum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MaximumProcessingUnits.value(),
+                                    desired_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.DesiredProcessingUnits.value(),
+                                    minimum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MinimumProcessingUnits.value()
+                                    )
+            """
     """
     try:
         print("Start object list")

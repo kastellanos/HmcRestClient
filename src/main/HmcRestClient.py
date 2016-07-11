@@ -32,8 +32,10 @@ from src.management_console.HardwareManagementConsole import HardwareManagementC
 log_object = HMCClientLogger.HMCClientLogger(__name__)
 print_obj = PrintModule.PrintModule()
 
+
 class HmcRestClient:
     """Interacts with client"""
+
     def logon_menu(self):
         while True:
             print_list = ['List managed HMC', 'Register managed HMC', 'Remove managed HMC',
