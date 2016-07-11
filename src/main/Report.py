@@ -52,16 +52,14 @@ def generate_report( name ):
     MEM = 2
     cliente = {}
     for i in ManagedSystem.select().where(ManagedSystem.associated_hmc==name):
-
-        for j in i:
-            # verificar!!!! Id almacenado en lpar de associated con el id de managed system
-            for k in LogicalPartition.select().where(LogicalPartition.associated_managed_system==j.id):
-                kname = extract_client( k.name )
-                if kname not in cliente:
-                    cliente[kname] = [0.0,0.0,0.0]
-                cliente[kname][CPU] += k.desired_processors
-                cliente[kname][S_CPU] += k.desired_processing_units
-                cliente[kname][MEM] += k.desired_memory
+        # verificar!!!! Id almacenado en lpar de associated con el id de managed system
+        for k in LogicalPartition.select().where(LogicalPartition.associated_managed_system==i.id):
+            kname = extract_client( k.name )
+            if kname not in cliente:
+                cliente[kname] = [0.0,0.0,0.0]
+            cliente[kname][CPU] += k.desired_processors
+            cliente[kname][S_CPU] += k.desired_processing_units
+            cliente[kname][MEM] += k.desired_memory
     write2excel = ExcelUtil()
     head_index = []
     head_column = ["DEDICATED CPU","SHARED CPU","MEMORY"]
