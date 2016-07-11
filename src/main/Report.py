@@ -99,7 +99,7 @@ def popullate_database( name, ip, x_api_session ):
                                        )
     for i in ManagedSystem.select():
         logicalpartition_object = ListLogicalPartition.ListLogicalPartition()
-        lpar_object_list = logicalpartition_object.list_LogicalPartition(ip, i.Metadata.Atom.AtomID.value(), x_api_session)
+        lpar_object_list = logicalpartition_object.list_LogicalPartition(ip, i.id, x_api_session)
         for j in lpar_object_list:
             if j.HasDedicatedProcessors.value():
                 LogicalPartition.create(id=j.PartitionID.value(),
