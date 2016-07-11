@@ -54,7 +54,7 @@ def generate_report( name ):
     for i in ManagedSystem.select().where(ManagedSystem.associated_hmc==name):
         # verificar!!!! Id almacenado en lpar de associated con el id de managed system
         for k in LogicalPartition.select().where(LogicalPartition.associated_managed_system==i.id):
-            kname = extract_client( k.name )
+            kname = extract_client( k )
             if kname not in cliente:
                 cliente[kname] = [0.0,0.0,0.0]
             cliente[kname][CPU] += k.desired_processors
