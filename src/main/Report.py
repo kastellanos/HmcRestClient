@@ -72,7 +72,7 @@ def generate_report( name ):
     print("Report generated in ",write2excel.file_path," as ",write2excel.file_name)
 
 
-def extract_client(self, lpar):
+def extract_client(lpar):
     domain_list = ["co", "com", "local"]
     name = None
     for i in lpar.name.split(".")[1:]:
