@@ -33,16 +33,92 @@ class Logon(object):
     """
     performs login into hmc taking valid credentials as input
     """
-    
-    def LogonRequest(self):
+
+    def LoginPersist(self, credentials):
+        ip = credentials.ip
+        username = credentials.username
+        password = credentials.password
+
+        while True:
+            self.root = 'Logon'
+            # PAYLOAD DATA FOR LOGON REQUEST.
+            self.logonrequest_payload = """
+                                   <LogonRequest
+                                    schemaVersion="V1_0"
+                                    xmlns="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/"
+                                    xmlns:mc="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/">
+                                   <UserID>%s</UserID>
+                                   <Password>%s</Password>
+                                   </LogonRequest>""" % (username, password)
+            self.service = 'web'
+            self.content_type = "application/vnd.ibm.powervm.web+xml"
+            try:
+                request_object = HTTPClient.HTTPClient(self.service, ip,
+                                                       self.root, self.content_type)
+                # CALLS HTTPPUT METHOD TO PERFORM LOGON WITH LOGONREQUEST AS CONTENT_TYPE
+                request_object.HTTPPut(self.logonrequest_payload)
+                if not request_object.response_b:
+                    # RESPONSE MESSAGE FOR INVALID CREDENTIALS AND ASKS CLIENT TO ENTER AGAIN
+                    print("\nEnter correct Credentials\n")
+                    log.log_debug("Enter correct Credentials")
+                else:
+                    x_api_session = get_x_api_session((request_object.response).content)
+                    log.log_debug("Logon successful")
+                    return x_api_session
+            except Exception:
+                print("\nInvalid IP Address or Connection Error\n")
+                log.log_debug("Invalid IP Address or Connection Error")
+
+    def LoginRequestSave(self):
+
+        while True:
+            name = input("Enter descriptive name of HMC")
+            ip = input("Enter IP address of HMC: ")
+            username = input("Enter username for HMC: ")
+            password = getpass.getpass("Enter password for HMC: ")
+            self.root = 'Logon'
+            # PAYLOAD DATA FOR LOGON REQUEST.
+            self.logonrequest_payload = """
+                               <LogonRequest
+                                schemaVersion="V1_0"
+                                xmlns="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/"
+                                xmlns:mc="http://www.ibm.com/xmlns/systems/power/firmware/web/mc/2012_10/">
+                               <UserID>%s</UserID>
+                               <Password>%s</Password>
+                               </LogonRequest>""" % (username, password)
+            self.service = 'web'
+            self.content_type = "application/vnd.ibm.powervm.web+xml"
+            try:
+                request_object = HTTPClient.HTTPClient(self.service, ip,
+                                                       self.root, self.content_type)
+                # CALLS HTTPPUT METHOD TO PERFORM LOGON WITH LOGONREQUEST AS CONTENT_TYPE
+                request_object.HTTPPut(self.logonrequest_payload)
+                if not request_object.response_b:
+                    # RESPONSE MESSAGE FOR INVALID CREDENTIALS AND ASKS CLIENT TO ENTER AGAIN
+                    print("\nEnter correct Credentials\n")
+                    log.log_debug("Enter correct Credentials")
+                else:
+                    x_api_session = get_x_api_session((request_object.response).content)
+                    log.log_debug("Logon successful")
+                    return (ip,name, username, password, x_api_session)
+            except Exception:
+                print("\nInvalid IP Address or Connection Error\n")
+                log.log_debug("Invalid IP Address or Connection Error")
+
+    def LogonRequest(self,ip=None,username=None,password=None):
         """
         performs login and returns x-api-session id and
         ip address of the system
         """
+
         while True:
-            ip = input("Enter IP address of HMC: ")
-            username = input("Enter username for HMC: ")
-            password = getpass.getpass("Enter password for HMC: ")
+            if ip is not None and username is not None and password is not None:
+                pass
+            else:
+                ip = input("Enter IP address of HMC: ")
+                username = input("Enter username for HMC: ")
+                password = getpass.getpass("Enter password for HMC: ")
+
             self.root = 'Logon'
             #PAYLOAD DATA FOR LOGON REQUEST.
             self.logonrequest_payload = """
@@ -71,7 +147,7 @@ class Logon(object):
             except Exception:
                     print("\nInvalid IP Address or Connection Error\n")
                     log.log_debug("Invalid IP Address or Connection Error")
-                    
+
         
     
 

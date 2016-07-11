@@ -27,11 +27,70 @@ import time
 import getch
 import warnings
 import xml.etree.ElementTree as etree
-log_object =HMCClientLogger.HMCClientLogger(__name__)
+from peewee import *
+from src.management_console.HardwareManagementConsole import HardwareManagementConsole
+log_object = HMCClientLogger.HMCClientLogger(__name__)
 print_obj = PrintModule.PrintModule()
-        
+
 class HmcRestClient:
     """Interacts with client"""
+    def logon_menu(self):
+        while True:
+            print_list = ['List managed HMC', 'Register managed HMC', 'Remove managed HMC',
+                          'Active managed HMC']
+            print_obj = PrintModule.PrintModule()
+            auth_choice = int(print_obj.print_on_screen(print_list))
+
+            if auth_choice == 1:
+                for i in HardwareManagementConsole.select():
+                    print(i.name, i.ip)
+            elif auth_choice == 2:
+                cls()
+                self.logon_save()
+            elif auth_choice == 3:
+                cls()
+                try:
+                    hmc_list = HardwareManagementConsole.select()
+                    for i in range(0, len(hmc_list)):
+                        print("%s.%s " % (i + 1, hmc_list[i].name))
+                    try:
+                        c = int(input("\nSelect any HMC index the operation to be performed:"))
+                        ch = c - 1
+                        q = HardwareManagementConsole.delete().where(HardwareManagementConsole.name == hmc_list[ch].name)
+                        q.execute()
+
+                    except IndexError:
+                        print("\nTry again using valid option")
+
+                except (TypeError, AttributeError):
+                    log_object.log_warn("No hmc are Available")
+            elif auth_choice == 4:
+                cls()
+                try:
+                    hmc_list = HardwareManagementConsole.select()
+                    for i in range(0, len(hmc_list)):
+                        print("%s.%s " % (i + 1, hmc_list[i].name))
+                    try:
+                        c = int(input("\nSelect any HMC index the operation to be performed:"))
+                        ch = c - 1
+                        hmc = hmc_list[ch]
+                        return hmc
+                    except IndexError:
+                        print("\nTry again using valid option")
+
+                except (TypeError, AttributeError):
+                    log_object.log_warn("No hmc are Available")
+    def logon_save(self):
+        cls()
+        logon_obj = LogonRequest.Logon()
+        lro = logon_obj.LoginRequestSave()
+        #try:
+        print( lro )
+        hmc = HardwareManagementConsole(ip=lro[0],name=lro[1],username=lro[2],password=lro[3])
+        hmc.save()
+        print( HardwareManagementConsole.select() )
+        #except:
+        #    print("Error creating HMC on database")
 
     def logon(self):
         """
@@ -127,7 +186,7 @@ def HMC_Help():
              return
         else:
             print("\nTry using Valid option")
-        back_to_menu()
+            back_to_menu()
 
 def cls():
     os.system( 'cls' if os.name=='nt' else 'clear' )

@@ -1,7 +1,7 @@
 # ./ManagedSystemPcmPreference.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:0187ff9a540c37f223dac915d3a3be8d51179dee
-# Generated 2016-07-05 14:29:21.199379 by PyXB version 1.2.4 using Python 3.5.2.final.0
+# Generated 2016-07-08 11:54:11.605802 by PyXB version 1.2.4 using Python 3.5.2.final.0
 # Namespace http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/
 
 from __future__ import unicode_literals
@@ -15,7 +15,7 @@ import sys
 import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
-_GenerationUID = pyxb.utils.utility.UniqueIdentifier('urn:uuid:c5a5b0be-42e6-11e6-8216-28d244259ce2')
+_GenerationUID = pyxb.utils.utility.UniqueIdentifier('urn:uuid:97f51e0a-452c-11e6-bf30-a44e31499350')
 
 # Version of PyXB used to generate the bindings
 _PyXBVersion = '1.2.4'
@@ -24,8 +24,8 @@ if pyxb.__version__ != _PyXBVersion:
     raise pyxb.PyXBVersionError(_PyXBVersion)
 
 # Import bindings for namespaces imported into schema
-import _xmlk2 as _ImportedBinding__xmlk2
 import pyxb.binding.datatypes
+import _xmlk2 as _ImportedBinding__xmlk2
 
 # NOTE: All namespace declarations are reserved within the binding
 Namespace = pyxb.namespace.NamespaceForURI('http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/', create_if_missing=True)
@@ -85,9 +85,9 @@ class AllOrNone_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumerat
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AllOrNone.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 80, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 80, 4)
     _Documentation = '\n                \n                 \n            '
-AllOrNone_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=AllOrNone_Enum)
+AllOrNone_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=AllOrNone_Enum, enum_prefix=None)
 AllOrNone_Enum.ALL = AllOrNone_Enum._CF_enumeration.addEnumeration(unicode_value='ALL', tag='ALL')
 AllOrNone_Enum.NONE = AllOrNone_Enum._CF_enumeration.addEnumeration(unicode_value='NONE', tag='NONE')
 AllOrNone_Enum._InitializeFacetMap(AllOrNone_Enum._CF_enumeration)
@@ -102,9 +102,9 @@ class Auto_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_m
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Auto.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 125, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 125, 4)
     _Documentation = '\n                \n                 \n            '
-Auto_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=Auto_Enum)
+Auto_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=Auto_Enum, enum_prefix=None)
 Auto_Enum.AUTO = Auto_Enum._CF_enumeration.addEnumeration(unicode_value='AUTO', tag='AUTO')
 Auto_Enum._InitializeFacetMap(Auto_Enum._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'Auto.Enum', Auto_Enum)
@@ -118,9 +118,9 @@ class None_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_m
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'None.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 159, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 159, 4)
     _Documentation = '\n                \n                 \n            '
-None_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=None_Enum)
+None_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=None_Enum, enum_prefix=None)
 None_Enum.NONE = None_Enum._CF_enumeration.addEnumeration(unicode_value='NONE', tag='NONE')
 None_Enum._InitializeFacetMap(None_Enum._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'None.Enum', None_Enum)
@@ -134,9 +134,9 @@ class HttpReasonCodes_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.en
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HttpReasonCodes.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 195, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 195, 3)
     _Documentation = '\n                \n                 \n            '
-HttpReasonCodes_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=HttpReasonCodes_Enum)
+HttpReasonCodes_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=HttpReasonCodes_Enum, enum_prefix=None)
 HttpReasonCodes_Enum.INVALID_URL = HttpReasonCodes_Enum._CF_enumeration.addEnumeration(unicode_value='INVALID_URL', tag='INVALID_URL')
 HttpReasonCodes_Enum.No_Valid_User_Session = HttpReasonCodes_Enum._CF_enumeration.addEnumeration(unicode_value='No Valid User Session.', tag='No_Valid_User_Session')
 HttpReasonCodes_Enum.Request_Body_Supplied_When_Not_Expected = HttpReasonCodes_Enum._CF_enumeration.addEnumeration(unicode_value='Request Body Supplied When Not Expected', tag='Request_Body_Supplied_When_Not_Expected')
@@ -175,9 +175,9 @@ class JobStatus_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumerat
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'JobStatus.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 448, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 448, 3)
     _Documentation = '\n                \n                 \n            '
-JobStatus_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=JobStatus_Enum)
+JobStatus_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=JobStatus_Enum, enum_prefix=None)
 JobStatus_Enum.Queued = JobStatus_Enum._CF_enumeration.addEnumeration(unicode_value='Queued', tag='Queued')
 JobStatus_Enum.Running = JobStatus_Enum._CF_enumeration.addEnumeration(unicode_value='Running', tag='Running')
 JobStatus_Enum.Failed = JobStatus_Enum._CF_enumeration.addEnumeration(unicode_value='Failed', tag='Failed')
@@ -194,9 +194,9 @@ class SearchComparator_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SearchComparator.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 503, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 503, 3)
     _Documentation = '\n                \n                 \n            '
-SearchComparator_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SearchComparator_Enum)
+SearchComparator_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SearchComparator_Enum, enum_prefix=None)
 SearchComparator_Enum.String_Match = SearchComparator_Enum._CF_enumeration.addEnumeration(unicode_value='String Match', tag='String_Match')
 SearchComparator_Enum.Numeric = SearchComparator_Enum._CF_enumeration.addEnumeration(unicode_value='Numeric', tag='Numeric')
 SearchComparator_Enum.Regular_Expression = SearchComparator_Enum._CF_enumeration.addEnumeration(unicode_value='Regular Expression', tag='Regular_Expression')
@@ -215,15 +215,14 @@ class SchemaVersion_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SchemaVersion.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 565, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 565, 2)
     _Documentation = '\n                \n                \n                \n                \n                \n            '
-SchemaVersion_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SchemaVersion_Enum)
+SchemaVersion_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SchemaVersion_Enum, enum_prefix=None)
 SchemaVersion_Enum.V1_0 = SchemaVersion_Enum._CF_enumeration.addEnumeration(unicode_value='V1_0', tag='V1_0')
 SchemaVersion_Enum.V1_1_0 = SchemaVersion_Enum._CF_enumeration.addEnumeration(unicode_value='V1_1_0', tag='V1_1_0')
 SchemaVersion_Enum.V1_2_0 = SchemaVersion_Enum._CF_enumeration.addEnumeration(unicode_value='V1_2_0', tag='V1_2_0')
 SchemaVersion_Enum.V1_3_0 = SchemaVersion_Enum._CF_enumeration.addEnumeration(unicode_value='V1_3_0', tag='V1_3_0')
 SchemaVersion_Enum.V1_3_1 = SchemaVersion_Enum._CF_enumeration.addEnumeration(unicode_value='V1_3_1', tag='V1_3_1')
-SchemaVersion_Enum.V1_4_0 = SchemaVersion_Enum._CF_enumeration.addEnumeration(unicode_value='V1_4_0', tag='V1_4_0')
 SchemaVersion_Enum._InitializeFacetMap(SchemaVersion_Enum._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'SchemaVersion.Enum', SchemaVersion_Enum)
 
@@ -233,9 +232,9 @@ class SystemState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumer
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SystemState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 645, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 641, 1)
     _Documentation = None
-SystemState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SystemState_Enum)
+SystemState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SystemState_Enum, enum_prefix=None)
 SystemState_Enum.Not_Available = SystemState_Enum._CF_enumeration.addEnumeration(unicode_value='Not Available', tag='Not_Available')
 SystemState_Enum.Recovery = SystemState_Enum._CF_enumeration.addEnumeration(unicode_value='Recovery', tag='Recovery')
 SystemState_Enum.Operating = SystemState_Enum._CF_enumeration.addEnumeration(unicode_value='Operating', tag='Operating')
@@ -267,9 +266,9 @@ class DetailedState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'DetailedState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 672, 5)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 668, 5)
     _Documentation = None
-DetailedState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=DetailedState_Enum)
+DetailedState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=DetailedState_Enum, enum_prefix=None)
 DetailedState_Enum.Unknown = DetailedState_Enum._CF_enumeration.addEnumeration(unicode_value='Unknown', tag='Unknown')
 DetailedState_Enum.Other = DetailedState_Enum._CF_enumeration.addEnumeration(unicode_value='Other', tag='Other')
 DetailedState_Enum.Stressed = DetailedState_Enum._CF_enumeration.addEnumeration(unicode_value='Stressed', tag='Stressed')
@@ -296,9 +295,9 @@ class ServiceProcesssorFailoverState_Enum (pyxb.binding.datatypes.string, pyxb.b
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ServiceProcesssorFailoverState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 694, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 690, 4)
     _Documentation = None
-ServiceProcesssorFailoverState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ServiceProcesssorFailoverState_Enum)
+ServiceProcesssorFailoverState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ServiceProcesssorFailoverState_Enum, enum_prefix=None)
 ServiceProcesssorFailoverState_Enum.Ready = ServiceProcesssorFailoverState_Enum._CF_enumeration.addEnumeration(unicode_value='Ready', tag='Ready')
 ServiceProcesssorFailoverState_Enum.Not_ready = ServiceProcesssorFailoverState_Enum._CF_enumeration.addEnumeration(unicode_value='Not ready', tag='Not_ready')
 ServiceProcesssorFailoverState_Enum._InitializeFacetMap(ServiceProcesssorFailoverState_Enum._CF_enumeration)
@@ -310,9 +309,9 @@ class MemoryMirroringState_Enum (pyxb.binding.datatypes.string, pyxb.binding.bas
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MemoryMirroringState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 701, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 697, 4)
     _Documentation = None
-MemoryMirroringState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=MemoryMirroringState_Enum)
+MemoryMirroringState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=MemoryMirroringState_Enum, enum_prefix=None)
 MemoryMirroringState_Enum.Not_mirrored = MemoryMirroringState_Enum._CF_enumeration.addEnumeration(unicode_value='Not mirrored', tag='Not_mirrored')
 MemoryMirroringState_Enum.Mirrored = MemoryMirroringState_Enum._CF_enumeration.addEnumeration(unicode_value='Mirrored', tag='Mirrored')
 MemoryMirroringState_Enum.Mirrored_but_running_exposed = MemoryMirroringState_Enum._CF_enumeration.addEnumeration(unicode_value='Mirrored but running exposed', tag='Mirrored_but_running_exposed')
@@ -329,9 +328,9 @@ class AddressBroadCastPolicy_Enum (pyxb.binding.datatypes.string, pyxb.binding.b
        """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AddressBroadCastPolicy.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 711, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 707, 2)
     _Documentation = 'Values for Managed System attribute \n      "addr broadcast perf policy" Is this a property that is only supported on P7 IH systems? \n       If so, those are locked to eFW7.3 levels of firmware and of HMC, \n       and will never need to expose this feature in K2 on eFW7.8 and later.\n       '
-AddressBroadCastPolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=AddressBroadCastPolicy_Enum)
+AddressBroadCastPolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=AddressBroadCastPolicy_Enum, enum_prefix=None)
 AddressBroadCastPolicy_Enum.No_Affinity = AddressBroadCastPolicy_Enum._CF_enumeration.addEnumeration(unicode_value='No Affinity', tag='No_Affinity')
 AddressBroadCastPolicy_Enum.Chip_Affinity = AddressBroadCastPolicy_Enum._CF_enumeration.addEnumeration(unicode_value='Chip Affinity', tag='Chip_Affinity')
 AddressBroadCastPolicy_Enum.Node_Affinity = AddressBroadCastPolicy_Enum._CF_enumeration.addEnumeration(unicode_value='Node Affinity', tag='Node_Affinity')
@@ -344,9 +343,9 @@ class ServiceProcessorSide_Enum (pyxb.binding.datatypes.string, pyxb.binding.bas
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ServiceProcessorSide.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 726, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 722, 4)
     _Documentation = None
-ServiceProcessorSide_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ServiceProcessorSide_Enum)
+ServiceProcessorSide_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ServiceProcessorSide_Enum, enum_prefix=None)
 ServiceProcessorSide_Enum.Permanent = ServiceProcessorSide_Enum._CF_enumeration.addEnumeration(unicode_value='Permanent', tag='Permanent')
 ServiceProcessorSide_Enum.Temporary = ServiceProcessorSide_Enum._CF_enumeration.addEnumeration(unicode_value='Temporary', tag='Temporary')
 ServiceProcessorSide_Enum._InitializeFacetMap(ServiceProcessorSide_Enum._CF_enumeration)
@@ -358,9 +357,9 @@ class KeyLockPosition_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.en
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'KeyLockPosition.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 733, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 729, 3)
     _Documentation = None
-KeyLockPosition_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=KeyLockPosition_Enum)
+KeyLockPosition_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=KeyLockPosition_Enum, enum_prefix=None)
 KeyLockPosition_Enum.normal = KeyLockPosition_Enum._CF_enumeration.addEnumeration(unicode_value='normal', tag='normal')
 KeyLockPosition_Enum.manual = KeyLockPosition_Enum._CF_enumeration.addEnumeration(unicode_value='manual', tag='manual')
 KeyLockPosition_Enum._InitializeFacetMap(KeyLockPosition_Enum._CF_enumeration)
@@ -372,9 +371,9 @@ class MajorBootType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MajorBootType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 740, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 736, 4)
     _Documentation = None
-MajorBootType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=MajorBootType_Enum)
+MajorBootType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=MajorBootType_Enum, enum_prefix=None)
 MajorBootType_Enum.Power_On = MajorBootType_Enum._CF_enumeration.addEnumeration(unicode_value='Power On', tag='Power_On')
 MajorBootType_Enum.Reboot = MajorBootType_Enum._CF_enumeration.addEnumeration(unicode_value='Reboot', tag='Reboot')
 MajorBootType_Enum._InitializeFacetMap(MajorBootType_Enum._CF_enumeration)
@@ -386,9 +385,9 @@ class FspmOsIplMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'FspmOsIplMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 747, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 743, 4)
     _Documentation = None
-FspmOsIplMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=FspmOsIplMode_Enum)
+FspmOsIplMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=FspmOsIplMode_Enum, enum_prefix=None)
 FspmOsIplMode_Enum.A = FspmOsIplMode_Enum._CF_enumeration.addEnumeration(unicode_value='A', tag='A')
 FspmOsIplMode_Enum.B = FspmOsIplMode_Enum._CF_enumeration.addEnumeration(unicode_value='B', tag='B')
 FspmOsIplMode_Enum.C = FspmOsIplMode_Enum._CF_enumeration.addEnumeration(unicode_value='C', tag='C')
@@ -405,9 +404,9 @@ class PartitionBootMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PartitionBootMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 756, 0)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 752, 0)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PartitionBootMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PartitionBootMode_Enum)
+PartitionBootMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PartitionBootMode_Enum, enum_prefix=None)
 PartitionBootMode_Enum.Diagnostic_with_Default_Boot_List = PartitionBootMode_Enum._CF_enumeration.addEnumeration(unicode_value='Diagnostic with Default Boot List', tag='Diagnostic_with_Default_Boot_List')
 PartitionBootMode_Enum.Diagnostic_with_Stored_Boot_List = PartitionBootMode_Enum._CF_enumeration.addEnumeration(unicode_value='Diagnostic with Stored Boot List', tag='Diagnostic_with_Stored_Boot_List')
 PartitionBootMode_Enum.Normal = PartitionBootMode_Enum._CF_enumeration.addEnumeration(unicode_value='Normal', tag='Normal')
@@ -422,9 +421,9 @@ class TurbocoreSupport_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'TurbocoreSupport.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 825, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 821, 3)
     _Documentation = None
-TurbocoreSupport_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=TurbocoreSupport_Enum)
+TurbocoreSupport_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=TurbocoreSupport_Enum, enum_prefix=None)
 TurbocoreSupport_Enum.Reserved = TurbocoreSupport_Enum._CF_enumeration.addEnumeration(unicode_value='Reserved', tag='Reserved')
 TurbocoreSupport_Enum.Turbocore_Capable = TurbocoreSupport_Enum._CF_enumeration.addEnumeration(unicode_value='Turbocore Capable', tag='Turbocore_Capable')
 TurbocoreSupport_Enum.Not_enough_nodes = TurbocoreSupport_Enum._CF_enumeration.addEnumeration(unicode_value='Not enough nodes', tag='Not_enough_nodes')
@@ -438,9 +437,9 @@ class ProcessorCompatibilityMode_Enum (pyxb.binding.datatypes.string, pyxb.bindi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ProcessorCompatibilityMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 834, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 830, 2)
     _Documentation = None
-ProcessorCompatibilityMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ProcessorCompatibilityMode_Enum)
+ProcessorCompatibilityMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ProcessorCompatibilityMode_Enum, enum_prefix=None)
 ProcessorCompatibilityMode_Enum.Default = ProcessorCompatibilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='Default', tag='Default')
 ProcessorCompatibilityMode_Enum.POWER5 = ProcessorCompatibilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='POWER5', tag='POWER5')
 ProcessorCompatibilityMode_Enum.POWER6 = ProcessorCompatibilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='POWER6', tag='POWER6')
@@ -462,9 +461,9 @@ class PartitionType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PartitionType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 851, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 847, 4)
     _Documentation = None
-PartitionType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PartitionType_Enum)
+PartitionType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PartitionType_Enum, enum_prefix=None)
 PartitionType_Enum.AIX = PartitionType_Enum._CF_enumeration.addEnumeration(unicode_value='AIX', tag='AIX')
 PartitionType_Enum.IBMi = PartitionType_Enum._CF_enumeration.addEnumeration(unicode_value='IBMi', tag='IBMi')
 PartitionType_Enum.VIOS = PartitionType_Enum._CF_enumeration.addEnumeration(unicode_value='VIOS', tag='VIOS')
@@ -477,9 +476,9 @@ class PartitionState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enu
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PartitionState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 859, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 855, 2)
     _Documentation = None
-PartitionState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PartitionState_Enum)
+PartitionState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PartitionState_Enum, enum_prefix=None)
 PartitionState_Enum.Not_Activated = PartitionState_Enum._CF_enumeration.addEnumeration(unicode_value='Not Activated', tag='Not_Activated')
 PartitionState_Enum.Starting = PartitionState_Enum._CF_enumeration.addEnumeration(unicode_value='Starting', tag='Starting')
 PartitionState_Enum.Running = PartitionState_Enum._CF_enumeration.addEnumeration(unicode_value='Running', tag='Running')
@@ -503,9 +502,9 @@ class ProgressState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ProgressState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 879, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 875, 2)
     _Documentation = ''
-ProgressState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ProgressState_Enum)
+ProgressState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ProgressState_Enum, enum_prefix=None)
 ProgressState_Enum.Hibernate_Preparing = ProgressState_Enum._CF_enumeration.addEnumeration(unicode_value='Hibernate Preparing', tag='Hibernate_Preparing')
 ProgressState_Enum.Hibernate_Validating = ProgressState_Enum._CF_enumeration.addEnumeration(unicode_value='Hibernate Validating', tag='Hibernate_Validating')
 ProgressState_Enum.Hibernate_Saving_HMC_Data = ProgressState_Enum._CF_enumeration.addEnumeration(unicode_value='Hibernate Saving HMC Data', tag='Hibernate_Saving_HMC_Data')
@@ -526,9 +525,9 @@ class CurrentProfileSync_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'CurrentProfileSync.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 902, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 898, 3)
     _Documentation = None
-CurrentProfileSync_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=CurrentProfileSync_Enum)
+CurrentProfileSync_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=CurrentProfileSync_Enum, enum_prefix=None)
 CurrentProfileSync_Enum.Disabled = CurrentProfileSync_Enum._CF_enumeration.addEnumeration(unicode_value='Disabled', tag='Disabled')
 CurrentProfileSync_Enum.On = CurrentProfileSync_Enum._CF_enumeration.addEnumeration(unicode_value='On', tag='On')
 CurrentProfileSync_Enum.Suspended = CurrentProfileSync_Enum._CF_enumeration.addEnumeration(unicode_value='Suspended', tag='Suspended')
@@ -544,9 +543,9 @@ class ManagedFrameType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ManagedFrameType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 910, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 906, 2)
     _Documentation = '\n                \n                 \n            '
-ManagedFrameType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ManagedFrameType_Enum)
+ManagedFrameType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ManagedFrameType_Enum, enum_prefix=None)
 ManagedFrameType_Enum.HE_BPA = ManagedFrameType_Enum._CF_enumeration.addEnumeration(unicode_value='HE BPA', tag='HE_BPA')
 ManagedFrameType_Enum.IH_BPA = ManagedFrameType_Enum._CF_enumeration.addEnumeration(unicode_value='IH BPA', tag='IH_BPA')
 ManagedFrameType_Enum.IO_Only = ManagedFrameType_Enum._CF_enumeration.addEnumeration(unicode_value='IO Only', tag='IO_Only')
@@ -564,9 +563,9 @@ class ManagedFrameState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ManagedFrameState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 971, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 967, 4)
     _Documentation = '\n                \n                 \n            '
-ManagedFrameState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ManagedFrameState_Enum)
+ManagedFrameState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ManagedFrameState_Enum, enum_prefix=None)
 ManagedFrameState_Enum.BPA_H_System = ManagedFrameState_Enum._CF_enumeration.addEnumeration(unicode_value='BPA (H System)', tag='BPA_H_System')
 ManagedFrameState_Enum.BPA_IH_System = ManagedFrameState_Enum._CF_enumeration.addEnumeration(unicode_value='BPA (IH System)', tag='BPA_IH_System')
 ManagedFrameState_Enum.BPA_IO_Only_Frame = ManagedFrameState_Enum._CF_enumeration.addEnumeration(unicode_value='BPA (IO-Only Frame)', tag='BPA_IO_Only_Frame')
@@ -605,9 +604,9 @@ class FunctionalState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.en
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'FunctionalState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1249, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1245, 1)
     _Documentation = None
-FunctionalState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=FunctionalState_Enum)
+FunctionalState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=FunctionalState_Enum, enum_prefix=None)
 FunctionalState_Enum.NonFunctional = FunctionalState_Enum._CF_enumeration.addEnumeration(unicode_value='NonFunctional', tag='NonFunctional')
 FunctionalState_Enum.Functional = FunctionalState_Enum._CF_enumeration.addEnumeration(unicode_value='Functional', tag='Functional')
 FunctionalState_Enum._InitializeFacetMap(FunctionalState_Enum._CF_enumeration)
@@ -622,9 +621,9 @@ class SharedEthernetAdapterHighAvailabilityMode_Enum (pyxb.binding.datatypes.str
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SharedEthernetAdapterHighAvailabilityMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1256, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1252, 4)
     _Documentation = '\n                \n                 \n            '
-SharedEthernetAdapterHighAvailabilityMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SharedEthernetAdapterHighAvailabilityMode_Enum)
+SharedEthernetAdapterHighAvailabilityMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SharedEthernetAdapterHighAvailabilityMode_Enum, enum_prefix=None)
 SharedEthernetAdapterHighAvailabilityMode_Enum.Disabled = SharedEthernetAdapterHighAvailabilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='Disabled', tag='Disabled')
 SharedEthernetAdapterHighAvailabilityMode_Enum.Auto = SharedEthernetAdapterHighAvailabilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='Auto', tag='Auto')
 SharedEthernetAdapterHighAvailabilityMode_Enum.Standby = SharedEthernetAdapterHighAvailabilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='Standby', tag='Standby')
@@ -640,9 +639,9 @@ class VitalProductDataStale_Enum (pyxb.binding.datatypes.string, pyxb.binding.ba
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VitalProductDataStale.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1299, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1295, 3)
     _Documentation = '\n                \n                 \n            '
-VitalProductDataStale_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=VitalProductDataStale_Enum)
+VitalProductDataStale_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=VitalProductDataStale_Enum, enum_prefix=None)
 VitalProductDataStale_Enum.NoVPD = VitalProductDataStale_Enum._CF_enumeration.addEnumeration(unicode_value='NoVPD', tag='NoVPD')
 VitalProductDataStale_Enum.ValidVPD = VitalProductDataStale_Enum._CF_enumeration.addEnumeration(unicode_value='ValidVPD', tag='ValidVPD')
 VitalProductDataStale_Enum.StaleVPD = VitalProductDataStale_Enum._CF_enumeration.addEnumeration(unicode_value='StaleVPD', tag='StaleVPD')
@@ -658,9 +657,9 @@ class HostChannelAdapterCableType_Enum (pyxb.binding.datatypes.string, pyxb.bind
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HostChannelAdapterCableType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1343, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1339, 4)
     _Documentation = '\n                \n                 \n            '
-HostChannelAdapterCableType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=HostChannelAdapterCableType_Enum)
+HostChannelAdapterCableType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=HostChannelAdapterCableType_Enum, enum_prefix=None)
 HostChannelAdapterCableType_Enum.Cable = HostChannelAdapterCableType_Enum._CF_enumeration.addEnumeration(unicode_value='Cable', tag='Cable')
 HostChannelAdapterCableType_Enum.Fiber = HostChannelAdapterCableType_Enum._CF_enumeration.addEnumeration(unicode_value='Fiber', tag='Fiber')
 HostChannelAdapterCableType_Enum._InitializeFacetMap(HostChannelAdapterCableType_Enum._CF_enumeration)
@@ -672,9 +671,9 @@ class HostChannelAdapterCapability_Enum (pyxb.binding.datatypes.string, pyxb.bin
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HostChannelAdapterCapability.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1377, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1373, 4)
     _Documentation = None
-HostChannelAdapterCapability_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=HostChannelAdapterCapability_Enum)
+HostChannelAdapterCapability_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=HostChannelAdapterCapability_Enum, enum_prefix=None)
 HostChannelAdapterCapability_Enum.dedicated = HostChannelAdapterCapability_Enum._CF_enumeration.addEnumeration(unicode_value='dedicated', tag='dedicated')
 HostChannelAdapterCapability_Enum.high = HostChannelAdapterCapability_Enum._CF_enumeration.addEnumeration(unicode_value='high', tag='high')
 HostChannelAdapterCapability_Enum.medium = HostChannelAdapterCapability_Enum._CF_enumeration.addEnumeration(unicode_value='medium', tag='medium')
@@ -688,9 +687,9 @@ class SEAQoSMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumera
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SEAQoSMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1386, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1382, 2)
     _Documentation = None
-SEAQoSMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SEAQoSMode_Enum)
+SEAQoSMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SEAQoSMode_Enum, enum_prefix=None)
 SEAQoSMode_Enum.disabled = SEAQoSMode_Enum._CF_enumeration.addEnumeration(unicode_value='disabled', tag='disabled')
 SEAQoSMode_Enum.strict = SEAQoSMode_Enum._CF_enumeration.addEnumeration(unicode_value='strict', tag='strict')
 SEAQoSMode_Enum.loose = SEAQoSMode_Enum._CF_enumeration.addEnumeration(unicode_value='loose', tag='loose')
@@ -706,9 +705,9 @@ class MediaSpeed_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumera
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MediaSpeed.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1394, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1390, 3)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-MediaSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=MediaSpeed_Enum)
+MediaSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=MediaSpeed_Enum, enum_prefix=None)
 MediaSpeed_Enum.E10_Full_Duplex = MediaSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E10_Full_Duplex', tag='E10_Full_Duplex')
 MediaSpeed_Enum.E10_Half_Duplex = MediaSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E10_Half_Duplex', tag='E10_Half_Duplex')
 MediaSpeed_Enum.E100_Full_Duplex = MediaSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E100_Full_Duplex', tag='E100_Full_Duplex')
@@ -725,9 +724,9 @@ class InstallationType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'InstallationType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1469, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1465, 2)
     _Documentation = None
-InstallationType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=InstallationType_Enum)
+InstallationType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=InstallationType_Enum, enum_prefix=None)
 InstallationType_Enum.DVD = InstallationType_Enum._CF_enumeration.addEnumeration(unicode_value='DVD', tag='DVD')
 InstallationType_Enum.Image = InstallationType_Enum._CF_enumeration.addEnumeration(unicode_value='Image', tag='Image')
 InstallationType_Enum.NIM = InstallationType_Enum._CF_enumeration.addEnumeration(unicode_value='NIM', tag='NIM')
@@ -740,9 +739,9 @@ class DuplexMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumera
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'DuplexMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1477, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1473, 3)
     _Documentation = None
-DuplexMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=DuplexMode_Enum)
+DuplexMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=DuplexMode_Enum, enum_prefix=None)
 DuplexMode_Enum.auto = DuplexMode_Enum._CF_enumeration.addEnumeration(unicode_value='auto', tag='auto')
 DuplexMode_Enum.half = DuplexMode_Enum._CF_enumeration.addEnumeration(unicode_value='half', tag='half')
 DuplexMode_Enum.full = DuplexMode_Enum._CF_enumeration.addEnumeration(unicode_value='full', tag='full')
@@ -758,9 +757,9 @@ class SRIOVConnectionSpeed_Enum (pyxb.binding.datatypes.string, pyxb.binding.bas
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SRIOVConnectionSpeed.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1484, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1480, 3)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-SRIOVConnectionSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SRIOVConnectionSpeed_Enum)
+SRIOVConnectionSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SRIOVConnectionSpeed_Enum, enum_prefix=None)
 SRIOVConnectionSpeed_Enum.E100Gbps = SRIOVConnectionSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E100Gbps', tag='E100Gbps')
 SRIOVConnectionSpeed_Enum.E100Mbps = SRIOVConnectionSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E100Mbps', tag='E100Mbps')
 SRIOVConnectionSpeed_Enum.E10Gbps = SRIOVConnectionSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E10Gbps', tag='E10Gbps')
@@ -777,9 +776,9 @@ class PhysicalVolumeState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PhysicalVolumeState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1563, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1559, 4)
     _Documentation = None
-PhysicalVolumeState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PhysicalVolumeState_Enum)
+PhysicalVolumeState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PhysicalVolumeState_Enum, enum_prefix=None)
 PhysicalVolumeState_Enum.online = PhysicalVolumeState_Enum._CF_enumeration.addEnumeration(unicode_value='online', tag='online')
 PhysicalVolumeState_Enum.stopped = PhysicalVolumeState_Enum._CF_enumeration.addEnumeration(unicode_value='stopped', tag='stopped')
 PhysicalVolumeState_Enum.failed = PhysicalVolumeState_Enum._CF_enumeration.addEnumeration(unicode_value='failed', tag='failed')
@@ -796,9 +795,9 @@ class PhysicalVolumeReservePolicy_Enum (pyxb.binding.datatypes.string, pyxb.bind
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PhysicalVolumeReservePolicy.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1572, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1568, 3)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PhysicalVolumeReservePolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PhysicalVolumeReservePolicy_Enum)
+PhysicalVolumeReservePolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PhysicalVolumeReservePolicy_Enum, enum_prefix=None)
 PhysicalVolumeReservePolicy_Enum.ClusterReserve = PhysicalVolumeReservePolicy_Enum._CF_enumeration.addEnumeration(unicode_value='ClusterReserve', tag='ClusterReserve')
 PhysicalVolumeReservePolicy_Enum.ExclusivePersistent = PhysicalVolumeReservePolicy_Enum._CF_enumeration.addEnumeration(unicode_value='ExclusivePersistent', tag='ExclusivePersistent')
 PhysicalVolumeReservePolicy_Enum.NoReserve = PhysicalVolumeReservePolicy_Enum._CF_enumeration.addEnumeration(unicode_value='NoReserve', tag='NoReserve')
@@ -814,9 +813,9 @@ class PhysicalVolumeUsage_Enum (pyxb.binding.datatypes.string, pyxb.binding.basi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PhysicalVolumeUsage.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1638, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1634, 4)
     _Documentation = None
-PhysicalVolumeUsage_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PhysicalVolumeUsage_Enum)
+PhysicalVolumeUsage_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PhysicalVolumeUsage_Enum, enum_prefix=None)
 PhysicalVolumeUsage_Enum.UNUSED = PhysicalVolumeUsage_Enum._CF_enumeration.addEnumeration(unicode_value='UNUSED', tag='UNUSED')
 PhysicalVolumeUsage_Enum.DISK = PhysicalVolumeUsage_Enum._CF_enumeration.addEnumeration(unicode_value='DISK', tag='DISK')
 PhysicalVolumeUsage_Enum.AMS = PhysicalVolumeUsage_Enum._CF_enumeration.addEnumeration(unicode_value='AMS', tag='AMS')
@@ -838,9 +837,9 @@ class SCSIReservePolicyAlgo_Enum (pyxb.binding.datatypes.string, pyxb.binding.ba
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SCSIReservePolicyAlgo.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1654, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1650, 4)
     _Documentation = None
-SCSIReservePolicyAlgo_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SCSIReservePolicyAlgo_Enum)
+SCSIReservePolicyAlgo_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SCSIReservePolicyAlgo_Enum, enum_prefix=None)
 SCSIReservePolicyAlgo_Enum.Failover = SCSIReservePolicyAlgo_Enum._CF_enumeration.addEnumeration(unicode_value='Failover', tag='Failover')
 SCSIReservePolicyAlgo_Enum.Round_Robin = SCSIReservePolicyAlgo_Enum._CF_enumeration.addEnumeration(unicode_value='Round Robin', tag='Round_Robin')
 SCSIReservePolicyAlgo_Enum.Load_Balance = SCSIReservePolicyAlgo_Enum._CF_enumeration.addEnumeration(unicode_value='Load Balance', tag='Load_Balance')
@@ -856,9 +855,9 @@ class ResourceMonitoringControlState_Enum (pyxb.binding.datatypes.string, pyxb.b
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ResourceMonitoringControlState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1661, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1657, 3)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-ResourceMonitoringControlState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ResourceMonitoringControlState_Enum)
+ResourceMonitoringControlState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ResourceMonitoringControlState_Enum, enum_prefix=None)
 ResourceMonitoringControlState_Enum.active = ResourceMonitoringControlState_Enum._CF_enumeration.addEnumeration(unicode_value='active', tag='active')
 ResourceMonitoringControlState_Enum.inactive = ResourceMonitoringControlState_Enum._CF_enumeration.addEnumeration(unicode_value='inactive', tag='inactive')
 ResourceMonitoringControlState_Enum.none = ResourceMonitoringControlState_Enum._CF_enumeration.addEnumeration(unicode_value='none', tag='none')
@@ -872,9 +871,9 @@ class ProfileType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumer
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ProfileType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1712, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1708, 4)
     _Documentation = None
-ProfileType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ProfileType_Enum)
+ProfileType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ProfileType_Enum, enum_prefix=None)
 ProfileType_Enum.Default = ProfileType_Enum._CF_enumeration.addEnumeration(unicode_value='Default', tag='Default')
 ProfileType_Enum.LastActivated = ProfileType_Enum._CF_enumeration.addEnumeration(unicode_value='LastActivated', tag='LastActivated')
 ProfileType_Enum.Current = ProfileType_Enum._CF_enumeration.addEnumeration(unicode_value='Current', tag='Current')
@@ -888,9 +887,9 @@ class ProcessorSharingMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.bas
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ProcessorSharingMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1721, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1717, 4)
     _Documentation = None
-ProcessorSharingMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ProcessorSharingMode_Enum)
+ProcessorSharingMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ProcessorSharingMode_Enum, enum_prefix=None)
 ProcessorSharingMode_Enum.Keep_unused_processors = ProcessorSharingMode_Enum._CF_enumeration.addEnumeration(unicode_value='Keep unused processors', tag='Keep_unused_processors')
 ProcessorSharingMode_Enum.Do_not_share = ProcessorSharingMode_Enum._CF_enumeration.addEnumeration(unicode_value='Do not share', tag='Do_not_share')
 ProcessorSharingMode_Enum.Share_unused_processors = ProcessorSharingMode_Enum._CF_enumeration.addEnumeration(unicode_value='Share unused processors', tag='Share_unused_processors')
@@ -906,9 +905,9 @@ class LogicalHostEthernetAdapterCapability_Enum (pyxb.binding.datatypes.string, 
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LogicalHostEthernetAdapterCapability.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1729, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1725, 4)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LogicalHostEthernetAdapterCapability_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LogicalHostEthernetAdapterCapability_Enum)
+LogicalHostEthernetAdapterCapability_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LogicalHostEthernetAdapterCapability_Enum, enum_prefix=None)
 LogicalHostEthernetAdapterCapability_Enum.Base_Minimum = LogicalHostEthernetAdapterCapability_Enum._CF_enumeration.addEnumeration(unicode_value='Base Minimum', tag='Base_Minimum')
 LogicalHostEthernetAdapterCapability_Enum.Dedicated = LogicalHostEthernetAdapterCapability_Enum._CF_enumeration.addEnumeration(unicode_value='Dedicated', tag='Dedicated')
 LogicalHostEthernetAdapterCapability_Enum.Defined_Resource_Amounts = LogicalHostEthernetAdapterCapability_Enum._CF_enumeration.addEnumeration(unicode_value='Defined Resource Amounts', tag='Defined_Resource_Amounts')
@@ -924,9 +923,9 @@ class CageType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumerati
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'CageType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1802, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1798, 4)
     _Documentation = None
-CageType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=CageType_Enum)
+CageType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=CageType_Enum, enum_prefix=None)
 CageType_Enum.BPA = CageType_Enum._CF_enumeration.addEnumeration(unicode_value='BPA', tag='BPA')
 CageType_Enum.System = CageType_Enum._CF_enumeration.addEnumeration(unicode_value='System', tag='System')
 CageType_Enum.IO = CageType_Enum._CF_enumeration.addEnumeration(unicode_value='IO', tag='IO')
@@ -942,9 +941,9 @@ class StorageDeviceState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'StorageDeviceState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1812, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1808, 4)
     _Documentation = None
-StorageDeviceState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=StorageDeviceState_Enum)
+StorageDeviceState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=StorageDeviceState_Enum, enum_prefix=None)
 StorageDeviceState_Enum.active = StorageDeviceState_Enum._CF_enumeration.addEnumeration(unicode_value='active', tag='active')
 StorageDeviceState_Enum.inactive = StorageDeviceState_Enum._CF_enumeration.addEnumeration(unicode_value='inactive', tag='inactive')
 StorageDeviceState_Enum.missing_backing_device = StorageDeviceState_Enum._CF_enumeration.addEnumeration(unicode_value='missing backing device', tag='missing_backing_device')
@@ -958,9 +957,9 @@ class StorageDeviceType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'StorageDeviceType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1820, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1816, 2)
     _Documentation = None
-StorageDeviceType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=StorageDeviceType_Enum)
+StorageDeviceType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=StorageDeviceType_Enum, enum_prefix=None)
 StorageDeviceType_Enum.logical = StorageDeviceType_Enum._CF_enumeration.addEnumeration(unicode_value='logical', tag='logical')
 StorageDeviceType_Enum.phys = StorageDeviceType_Enum._CF_enumeration.addEnumeration(unicode_value='phys', tag='phys')
 StorageDeviceType_Enum.sspLU = StorageDeviceType_Enum._CF_enumeration.addEnumeration(unicode_value='sspLU', tag='sspLU')
@@ -976,9 +975,9 @@ class HostEthernetAdapterPhysicalPortType_Enum (pyxb.binding.datatypes.string, p
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HostEthernetAdapterPhysicalPortType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1828, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1824, 3)
     _Documentation = '\n                \n                 \n            '
-HostEthernetAdapterPhysicalPortType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=HostEthernetAdapterPhysicalPortType_Enum)
+HostEthernetAdapterPhysicalPortType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=HostEthernetAdapterPhysicalPortType_Enum, enum_prefix=None)
 HostEthernetAdapterPhysicalPortType_Enum.E1Gbps = HostEthernetAdapterPhysicalPortType_Enum._CF_enumeration.addEnumeration(unicode_value='E1Gbps', tag='E1Gbps')
 HostEthernetAdapterPhysicalPortType_Enum.E10Gbps = HostEthernetAdapterPhysicalPortType_Enum._CF_enumeration.addEnumeration(unicode_value='E10Gbps', tag='E10Gbps')
 HostEthernetAdapterPhysicalPortType_Enum._InitializeFacetMap(HostEthernetAdapterPhysicalPortType_Enum._CF_enumeration)
@@ -990,9 +989,9 @@ class EthernetFrameSize_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'EthernetFrameSize.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1862, 6)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1858, 6)
     _Documentation = None
-EthernetFrameSize_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=EthernetFrameSize_Enum)
+EthernetFrameSize_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=EthernetFrameSize_Enum, enum_prefix=None)
 EthernetFrameSize_Enum.Non_Jumbo_1500_Byte = EthernetFrameSize_Enum._CF_enumeration.addEnumeration(unicode_value='Non-Jumbo 1500 Byte', tag='Non_Jumbo_1500_Byte')
 EthernetFrameSize_Enum.Jumbo_9000_Byte = EthernetFrameSize_Enum._CF_enumeration.addEnumeration(unicode_value='Jumbo 9000 Byte', tag='Jumbo_9000_Byte')
 EthernetFrameSize_Enum._InitializeFacetMap(EthernetFrameSize_Enum._CF_enumeration)
@@ -1004,9 +1003,9 @@ class HEALogicalPortState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HEALogicalPortState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1870, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1866, 3)
     _Documentation = None
-HEALogicalPortState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=HEALogicalPortState_Enum)
+HEALogicalPortState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=HEALogicalPortState_Enum, enum_prefix=None)
 HEALogicalPortState_Enum.Available = HEALogicalPortState_Enum._CF_enumeration.addEnumeration(unicode_value='Available', tag='Available')
 HEALogicalPortState_Enum.Unavailable = HEALogicalPortState_Enum._CF_enumeration.addEnumeration(unicode_value='Unavailable', tag='Unavailable')
 HEALogicalPortState_Enum._InitializeFacetMap(HEALogicalPortState_Enum._CF_enumeration)
@@ -1018,9 +1017,9 @@ class VirtualSwitchMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VirtualSwitchMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1877, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1873, 4)
     _Documentation = None
-VirtualSwitchMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=VirtualSwitchMode_Enum)
+VirtualSwitchMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=VirtualSwitchMode_Enum, enum_prefix=None)
 VirtualSwitchMode_Enum.VEB = VirtualSwitchMode_Enum._CF_enumeration.addEnumeration(unicode_value='VEB', tag='VEB')
 VirtualSwitchMode_Enum.VEPA = VirtualSwitchMode_Enum._CF_enumeration.addEnumeration(unicode_value='VEPA', tag='VEPA')
 VirtualSwitchMode_Enum._InitializeFacetMap(VirtualSwitchMode_Enum._CF_enumeration)
@@ -1035,9 +1034,9 @@ class VirtualStationInterfaceType_Enum (pyxb.binding.datatypes.string, pyxb.bind
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VirtualStationInterfaceType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1885, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1881, 4)
     _Documentation = '\n                \n                 \n            '
-VirtualStationInterfaceType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=VirtualStationInterfaceType_Enum)
+VirtualStationInterfaceType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=VirtualStationInterfaceType_Enum, enum_prefix=None)
 VirtualStationInterfaceType_Enum.Pre_Associate = VirtualStationInterfaceType_Enum._CF_enumeration.addEnumeration(unicode_value='Pre-Associate', tag='Pre_Associate')
 VirtualStationInterfaceType_Enum.Pre_Associate_With_Resource_Reservation = VirtualStationInterfaceType_Enum._CF_enumeration.addEnumeration(unicode_value='Pre-Associate_With_Resource_Reservation', tag='Pre_Associate_With_Resource_Reservation')
 VirtualStationInterfaceType_Enum.Associate = VirtualStationInterfaceType_Enum._CF_enumeration.addEnumeration(unicode_value='Associate', tag='Associate')
@@ -1056,9 +1055,9 @@ class IOAdapterType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IOAdapterType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 1955, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 1951, 3)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-IOAdapterType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=IOAdapterType_Enum)
+IOAdapterType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=IOAdapterType_Enum, enum_prefix=None)
 IOAdapterType_Enum.HostEthernetAdapter = IOAdapterType_Enum._CF_enumeration.addEnumeration(unicode_value='HostEthernetAdapter', tag='HostEthernetAdapter')
 IOAdapterType_Enum.physicalEthernetAdpter = IOAdapterType_Enum._CF_enumeration.addEnumeration(unicode_value='physicalEthernetAdpter', tag='physicalEthernetAdpter')
 IOAdapterType_Enum.physical_FiberCnnel = IOAdapterType_Enum._CF_enumeration.addEnumeration(unicode_value='physical_FiberCnnel', tag='physical_FiberCnnel')
@@ -1080,9 +1079,9 @@ class ConnectionSpeed_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.en
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ConnectionSpeed.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2058, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2054, 2)
     _Documentation = '\n                \n                 \n            '
-ConnectionSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ConnectionSpeed_Enum)
+ConnectionSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ConnectionSpeed_Enum, enum_prefix=None)
 ConnectionSpeed_Enum.auto = ConnectionSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='auto', tag='auto')
 ConnectionSpeed_Enum.E10Mbps = ConnectionSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E10Mbps', tag='E10Mbps')
 ConnectionSpeed_Enum.E100Mbps = ConnectionSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='E100Mbps', tag='E100Mbps')
@@ -1100,9 +1099,9 @@ class LinkAggregationHashMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LinkAggregationHashMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2117, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2113, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LinkAggregationHashMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LinkAggregationHashMode_Enum)
+LinkAggregationHashMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LinkAggregationHashMode_Enum, enum_prefix=None)
 LinkAggregationHashMode_Enum.default = LinkAggregationHashMode_Enum._CF_enumeration.addEnumeration(unicode_value='default', tag='default')
 LinkAggregationHashMode_Enum.dst_port = LinkAggregationHashMode_Enum._CF_enumeration.addEnumeration(unicode_value='dst_port', tag='dst_port')
 LinkAggregationHashMode_Enum.src_dst_port = LinkAggregationHashMode_Enum._CF_enumeration.addEnumeration(unicode_value='src_dst_port', tag='src_dst_port')
@@ -1119,9 +1118,9 @@ class LinkAggregationMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basi
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LinkAggregationMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2168, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2164, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LinkAggregationMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LinkAggregationMode_Enum)
+LinkAggregationMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LinkAggregationMode_Enum, enum_prefix=None)
 LinkAggregationMode_Enum.IEEE8023ad = LinkAggregationMode_Enum._CF_enumeration.addEnumeration(unicode_value='IEEE8023ad', tag='IEEE8023ad')
 LinkAggregationMode_Enum.round_robin = LinkAggregationMode_Enum._CF_enumeration.addEnumeration(unicode_value='round_robin', tag='round_robin')
 LinkAggregationMode_Enum.standard = LinkAggregationMode_Enum._CF_enumeration.addEnumeration(unicode_value='standard', tag='standard')
@@ -1137,9 +1136,9 @@ class VirtualIOAdapterType_Enum (pyxb.binding.datatypes.string, pyxb.binding.bas
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VirtualIOAdapterType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2212, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2208, 1)
     _Documentation = '\n                \n                 \n            '
-VirtualIOAdapterType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=VirtualIOAdapterType_Enum)
+VirtualIOAdapterType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=VirtualIOAdapterType_Enum, enum_prefix=None)
 VirtualIOAdapterType_Enum.SERVER = VirtualIOAdapterType_Enum._CF_enumeration.addEnumeration(unicode_value='SERVER', tag='SERVER')
 VirtualIOAdapterType_Enum.CLIENT = VirtualIOAdapterType_Enum._CF_enumeration.addEnumeration(unicode_value='CLIENT', tag='CLIENT')
 VirtualIOAdapterType_Enum._InitializeFacetMap(VirtualIOAdapterType_Enum._CF_enumeration)
@@ -1154,9 +1153,9 @@ class AddressBroadcastPerformancePolicy_Enum (pyxb.binding.datatypes.string, pyx
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AddressBroadcastPerformancePolicy.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2248, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2244, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-AddressBroadcastPerformancePolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=AddressBroadcastPerformancePolicy_Enum)
+AddressBroadcastPerformancePolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=AddressBroadcastPerformancePolicy_Enum, enum_prefix=None)
 AddressBroadcastPerformancePolicy_Enum.Chip_Affinity = AddressBroadcastPerformancePolicy_Enum._CF_enumeration.addEnumeration(unicode_value='Chip Affinity', tag='Chip_Affinity')
 AddressBroadcastPerformancePolicy_Enum.No_Affinity = AddressBroadcastPerformancePolicy_Enum._CF_enumeration.addEnumeration(unicode_value='No Affinity', tag='No_Affinity')
 AddressBroadcastPerformancePolicy_Enum.Node_Affinity = AddressBroadcastPerformancePolicy_Enum._CF_enumeration.addEnumeration(unicode_value='Node Affinity', tag='Node_Affinity')
@@ -1172,9 +1171,9 @@ class MemoryMirroringMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basi
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MemoryMirroringMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2293, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2289, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-MemoryMirroringMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=MemoryMirroringMode_Enum)
+MemoryMirroringMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=MemoryMirroringMode_Enum, enum_prefix=None)
 MemoryMirroringMode_Enum.none = MemoryMirroringMode_Enum._CF_enumeration.addEnumeration(unicode_value='none', tag='none')
 MemoryMirroringMode_Enum.system_firmware_only = MemoryMirroringMode_Enum._CF_enumeration.addEnumeration(unicode_value='system firmware only', tag='system_firmware_only')
 MemoryMirroringMode_Enum._InitializeFacetMap(MemoryMirroringMode_Enum._CF_enumeration)
@@ -1189,9 +1188,9 @@ class FullSystemPartitionIPLMode_Enum (pyxb.binding.datatypes.string, pyxb.bindi
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'FullSystemPartitionIPLMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2328, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2324, 2)
     _Documentation = '\n                \n                 \n            '
-FullSystemPartitionIPLMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=FullSystemPartitionIPLMode_Enum)
+FullSystemPartitionIPLMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=FullSystemPartitionIPLMode_Enum, enum_prefix=None)
 FullSystemPartitionIPLMode_Enum.TODO = FullSystemPartitionIPLMode_Enum._CF_enumeration.addEnumeration(unicode_value='TODO', tag='TODO')
 FullSystemPartitionIPLMode_Enum._InitializeFacetMap(FullSystemPartitionIPLMode_Enum._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'FullSystemPartitionIPLMode.Enum', FullSystemPartitionIPLMode_Enum)
@@ -1205,9 +1204,9 @@ class LogicalPartitionProcessorCompatibilityMode_Enum (pyxb.binding.datatypes.st
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LogicalPartitionProcessorCompatibilityMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2353, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2349, 4)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LogicalPartitionProcessorCompatibilityMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LogicalPartitionProcessorCompatibilityMode_Enum)
+LogicalPartitionProcessorCompatibilityMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LogicalPartitionProcessorCompatibilityMode_Enum, enum_prefix=None)
 LogicalPartitionProcessorCompatibilityMode_Enum.default = LogicalPartitionProcessorCompatibilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='default', tag='default')
 LogicalPartitionProcessorCompatibilityMode_Enum.POWER6 = LogicalPartitionProcessorCompatibilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='POWER6', tag='POWER6')
 LogicalPartitionProcessorCompatibilityMode_Enum.POWER6_Plus = LogicalPartitionProcessorCompatibilityMode_Enum._CF_enumeration.addEnumeration(unicode_value='POWER6_Plus', tag='POWER6_Plus')
@@ -1225,9 +1224,9 @@ class BootMode_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumerati
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'BootMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2414, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2410, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-BootMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=BootMode_Enum)
+BootMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=BootMode_Enum, enum_prefix=None)
 BootMode_Enum.Diagnostic_with_Default_Boot_List = BootMode_Enum._CF_enumeration.addEnumeration(unicode_value='Diagnostic with Default Boot List', tag='Diagnostic_with_Default_Boot_List')
 BootMode_Enum.Diagnostic_with_Stored_Boot_List = BootMode_Enum._CF_enumeration.addEnumeration(unicode_value='Diagnostic with Stored Boot List', tag='Diagnostic_with_Stored_Boot_List')
 BootMode_Enum.Normal = BootMode_Enum._CF_enumeration.addEnumeration(unicode_value='Normal', tag='Normal')
@@ -1245,9 +1244,9 @@ class LogicalPartitionState_Enum (pyxb.binding.datatypes.string, pyxb.binding.ba
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LogicalPartitionState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2484, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2480, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LogicalPartitionState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LogicalPartitionState_Enum)
+LogicalPartitionState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LogicalPartitionState_Enum, enum_prefix=None)
 LogicalPartitionState_Enum.error = LogicalPartitionState_Enum._CF_enumeration.addEnumeration(unicode_value='error', tag='error')
 LogicalPartitionState_Enum.not_activated = LogicalPartitionState_Enum._CF_enumeration.addEnumeration(unicode_value='not activated', tag='not_activated')
 LogicalPartitionState_Enum.not_available = LogicalPartitionState_Enum._CF_enumeration.addEnumeration(unicode_value='not available', tag='not_available')
@@ -1267,9 +1266,9 @@ class LogicalPartitionEnvironment_Enum (pyxb.binding.datatypes.string, pyxb.bind
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LogicalPartitionEnvironment.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2564, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2560, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LogicalPartitionEnvironment_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LogicalPartitionEnvironment_Enum)
+LogicalPartitionEnvironment_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LogicalPartitionEnvironment_Enum, enum_prefix=None)
 LogicalPartitionEnvironment_Enum.AIXLinux = LogicalPartitionEnvironment_Enum._CF_enumeration.addEnumeration(unicode_value='AIX/Linux', tag='AIXLinux')
 LogicalPartitionEnvironment_Enum.OS400 = LogicalPartitionEnvironment_Enum._CF_enumeration.addEnumeration(unicode_value='OS400', tag='OS400')
 LogicalPartitionEnvironment_Enum.Virtual_IO_Server = LogicalPartitionEnvironment_Enum._CF_enumeration.addEnumeration(unicode_value='Virtual IO Server', tag='Virtual_IO_Server')
@@ -1285,9 +1284,9 @@ class LogicalPartitionProcessorSharingMode_Enum (pyxb.binding.datatypes.string, 
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'LogicalPartitionProcessorSharingMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2609, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2605, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-LogicalPartitionProcessorSharingMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=LogicalPartitionProcessorSharingMode_Enum)
+LogicalPartitionProcessorSharingMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=LogicalPartitionProcessorSharingMode_Enum, enum_prefix=None)
 LogicalPartitionProcessorSharingMode_Enum.keep_idle_procs = LogicalPartitionProcessorSharingMode_Enum._CF_enumeration.addEnumeration(unicode_value='keep idle procs', tag='keep_idle_procs')
 LogicalPartitionProcessorSharingMode_Enum.sre_idle_proces = LogicalPartitionProcessorSharingMode_Enum._CF_enumeration.addEnumeration(unicode_value='sre idle proces', tag='sre_idle_proces')
 LogicalPartitionProcessorSharingMode_Enum.sre_idle_procs_active = LogicalPartitionProcessorSharingMode_Enum._CF_enumeration.addEnumeration(unicode_value='sre idle procs active', tag='sre_idle_procs_active')
@@ -1304,9 +1303,9 @@ class IPLSource_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumerat
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPLSource.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2661, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2657, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-IPLSource_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=IPLSource_Enum)
+IPLSource_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=IPLSource_Enum, enum_prefix=None)
 IPLSource_Enum.a = IPLSource_Enum._CF_enumeration.addEnumeration(unicode_value='a', tag='a')
 IPLSource_Enum.b = IPLSource_Enum._CF_enumeration.addEnumeration(unicode_value='b', tag='b')
 IPLSource_Enum.c = IPLSource_Enum._CF_enumeration.addEnumeration(unicode_value='c', tag='c')
@@ -1322,9 +1321,9 @@ class MultiCoreScalingValue_Enum (pyxb.binding.datatypes.unsignedShort, pyxb.bin
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MultiCoreScalingValue.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2731, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2727, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t'
-MultiCoreScalingValue_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=MultiCoreScalingValue_Enum)
+MultiCoreScalingValue_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=MultiCoreScalingValue_Enum, enum_prefix=None)
 MultiCoreScalingValue_Enum._CF_enumeration.addEnumeration(unicode_value='1', tag=None)
 MultiCoreScalingValue_Enum._CF_enumeration.addEnumeration(unicode_value='2', tag=None)
 MultiCoreScalingValue_Enum._CF_enumeration.addEnumeration(unicode_value='4', tag=None)
@@ -1342,9 +1341,9 @@ class HostEthernetAdapterLogicalPortState_Enum (pyxb.binding.datatypes.string, p
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HostEthernetAdapterLogicalPortState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2788, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2784, 1)
     _Documentation = '\n                \n                 \n            '
-HostEthernetAdapterLogicalPortState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=HostEthernetAdapterLogicalPortState_Enum)
+HostEthernetAdapterLogicalPortState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=HostEthernetAdapterLogicalPortState_Enum, enum_prefix=None)
 HostEthernetAdapterLogicalPortState_Enum.Available = HostEthernetAdapterLogicalPortState_Enum._CF_enumeration.addEnumeration(unicode_value='Available', tag='Available')
 HostEthernetAdapterLogicalPortState_Enum.Unavailable = HostEthernetAdapterLogicalPortState_Enum._CF_enumeration.addEnumeration(unicode_value='Unavailable', tag='Unavailable')
 HostEthernetAdapterLogicalPortState_Enum._InitializeFacetMap(HostEthernetAdapterLogicalPortState_Enum._CF_enumeration)
@@ -1359,9 +1358,9 @@ class SharedEthernetAdapterQualityOfServiceMode_Enum (pyxb.binding.datatypes.str
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SharedEthernetAdapterQualityOfServiceMode.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2822, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2818, 4)
     _Documentation = '\n                \n                 \n            '
-SharedEthernetAdapterQualityOfServiceMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SharedEthernetAdapterQualityOfServiceMode_Enum)
+SharedEthernetAdapterQualityOfServiceMode_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SharedEthernetAdapterQualityOfServiceMode_Enum, enum_prefix=None)
 SharedEthernetAdapterQualityOfServiceMode_Enum.Disabled = SharedEthernetAdapterQualityOfServiceMode_Enum._CF_enumeration.addEnumeration(unicode_value='Disabled', tag='Disabled')
 SharedEthernetAdapterQualityOfServiceMode_Enum.Strict = SharedEthernetAdapterQualityOfServiceMode_Enum._CF_enumeration.addEnumeration(unicode_value='Strict', tag='Strict')
 SharedEthernetAdapterQualityOfServiceMode_Enum.Loose = SharedEthernetAdapterQualityOfServiceMode_Enum._CF_enumeration.addEnumeration(unicode_value='Loose', tag='Loose')
@@ -1374,9 +1373,9 @@ class ConfigOption_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enume
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ConfigOption.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2863, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2859, 4)
     _Documentation = None
-ConfigOption_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ConfigOption_Enum)
+ConfigOption_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ConfigOption_Enum, enum_prefix=None)
 ConfigOption_Enum.CONFIG_AT_DEPLOYMENT = ConfigOption_Enum._CF_enumeration.addEnumeration(unicode_value='CONFIG_AT_DEPLOYMENT', tag='CONFIG_AT_DEPLOYMENT')
 ConfigOption_Enum.CONFIG_WITH_CAPTURE = ConfigOption_Enum._CF_enumeration.addEnumeration(unicode_value='CONFIG_WITH_CAPTURE', tag='CONFIG_WITH_CAPTURE')
 ConfigOption_Enum.DONOT_CONFIG = ConfigOption_Enum._CF_enumeration.addEnumeration(unicode_value='DONOT_CONFIG', tag='DONOT_CONFIG')
@@ -1392,9 +1391,9 @@ class PowerOnStartPolicy_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PowerOnStartPolicy.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2892, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2888, 4)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PowerOnStartPolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PowerOnStartPolicy_Enum)
+PowerOnStartPolicy_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PowerOnStartPolicy_Enum, enum_prefix=None)
 PowerOnStartPolicy_Enum.autorecovery = PowerOnStartPolicy_Enum._CF_enumeration.addEnumeration(unicode_value='autorecovery', tag='autorecovery')
 PowerOnStartPolicy_Enum.autostart = PowerOnStartPolicy_Enum._CF_enumeration.addEnumeration(unicode_value='autostart', tag='autostart')
 PowerOnStartPolicy_Enum.userinit = PowerOnStartPolicy_Enum._CF_enumeration.addEnumeration(unicode_value='userinit', tag='userinit')
@@ -1411,9 +1410,9 @@ class PowerOnOption_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PowerOnOption.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2944, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2940, 4)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PowerOnOption_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PowerOnOption_Enum)
+PowerOnOption_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PowerOnOption_Enum, enum_prefix=None)
 PowerOnOption_Enum.autostart = PowerOnOption_Enum._CF_enumeration.addEnumeration(unicode_value='autostart', tag='autostart')
 PowerOnOption_Enum.standby = PowerOnOption_Enum._CF_enumeration.addEnumeration(unicode_value='standby', tag='standby')
 PowerOnOption_Enum._InitializeFacetMap(PowerOnOption_Enum._CF_enumeration)
@@ -1428,9 +1427,9 @@ class PowerOnSide_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumer
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PowerOnSide.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 2979, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 2975, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PowerOnSide_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PowerOnSide_Enum)
+PowerOnSide_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PowerOnSide_Enum, enum_prefix=None)
 PowerOnSide_Enum.permanent = PowerOnSide_Enum._CF_enumeration.addEnumeration(unicode_value='permanent', tag='permanent')
 PowerOnSide_Enum.temporary = PowerOnSide_Enum._CF_enumeration.addEnumeration(unicode_value='temporary', tag='temporary')
 PowerOnSide_Enum.Unknown = PowerOnSide_Enum._CF_enumeration.addEnumeration(unicode_value='Unknown', tag='Unknown')
@@ -1446,9 +1445,9 @@ class PowerOnSpeed_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enume
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PowerOnSpeed.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3022, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3018, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PowerOnSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PowerOnSpeed_Enum)
+PowerOnSpeed_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PowerOnSpeed_Enum, enum_prefix=None)
 PowerOnSpeed_Enum.fast = PowerOnSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='fast', tag='fast')
 PowerOnSpeed_Enum.slow = PowerOnSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='slow', tag='slow')
 PowerOnSpeed_Enum.Unknown = PowerOnSpeed_Enum._CF_enumeration.addEnumeration(unicode_value='Unknown', tag='Unknown')
@@ -1464,9 +1463,9 @@ class PowerOnSpeedOverride_Enum (pyxb.binding.datatypes.string, pyxb.binding.bas
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PowerOnSpeedOverride.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3065, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3061, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-PowerOnSpeedOverride_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=PowerOnSpeedOverride_Enum)
+PowerOnSpeedOverride_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=PowerOnSpeedOverride_Enum, enum_prefix=None)
 PowerOnSpeedOverride_Enum.fast = PowerOnSpeedOverride_Enum._CF_enumeration.addEnumeration(unicode_value='fast', tag='fast')
 PowerOnSpeedOverride_Enum.none = PowerOnSpeedOverride_Enum._CF_enumeration.addEnumeration(unicode_value='none', tag='none')
 PowerOnSpeedOverride_Enum.slow = PowerOnSpeedOverride_Enum._CF_enumeration.addEnumeration(unicode_value='slow', tag='slow')
@@ -1483,9 +1482,9 @@ class SRIOVStatus_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumer
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SRIOVStatus.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3117, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3113, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-SRIOVStatus_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SRIOVStatus_Enum)
+SRIOVStatus_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SRIOVStatus_Enum, enum_prefix=None)
 SRIOVStatus_Enum.Initializing = SRIOVStatus_Enum._CF_enumeration.addEnumeration(unicode_value='Initializing', tag='Initializing')
 SRIOVStatus_Enum.NotConfigured = SRIOVStatus_Enum._CF_enumeration.addEnumeration(unicode_value='NotConfigured', tag='NotConfigured')
 SRIOVStatus_Enum.PoweredOff = SRIOVStatus_Enum._CF_enumeration.addEnumeration(unicode_value='PoweredOff', tag='PoweredOff')
@@ -1504,9 +1503,9 @@ class SRIOVConfigState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SRIOVConfigState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3184, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3180, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-SRIOVConfigState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SRIOVConfigState_Enum)
+SRIOVConfigState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SRIOVConfigState_Enum, enum_prefix=None)
 SRIOVConfigState_Enum.Configured = SRIOVConfigState_Enum._CF_enumeration.addEnumeration(unicode_value='Configured', tag='Configured')
 SRIOVConfigState_Enum.Dedicated = SRIOVConfigState_Enum._CF_enumeration.addEnumeration(unicode_value='Dedicated', tag='Dedicated')
 SRIOVConfigState_Enum.NotConfigured = SRIOVConfigState_Enum._CF_enumeration.addEnumeration(unicode_value='NotConfigured', tag='NotConfigured')
@@ -1523,9 +1522,9 @@ class SRIOVFunctionalStatus_Enum (pyxb.binding.datatypes.string, pyxb.binding.ba
 			"""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SRIOVFunctionalStatus.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3235, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3231, 1)
     _Documentation = '\n\t\t\t\t\n\t\t\t\t \n\t\t\t'
-SRIOVFunctionalStatus_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SRIOVFunctionalStatus_Enum)
+SRIOVFunctionalStatus_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SRIOVFunctionalStatus_Enum, enum_prefix=None)
 SRIOVFunctionalStatus_Enum.Functional = SRIOVFunctionalStatus_Enum._CF_enumeration.addEnumeration(unicode_value='Functional', tag='Functional')
 SRIOVFunctionalStatus_Enum.NonFunctional = SRIOVFunctionalStatus_Enum._CF_enumeration.addEnumeration(unicode_value='NonFunctional', tag='NonFunctional')
 SRIOVFunctionalStatus_Enum.Unknown = SRIOVFunctionalStatus_Enum._CF_enumeration.addEnumeration(unicode_value='Unknown', tag='Unknown')
@@ -1541,9 +1540,9 @@ class SRIOVAdapterPersonalities_Enum (pyxb.binding.datatypes.string, pyxb.bindin
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SRIOVAdapterPersonalities.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3279, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3275, 2)
     _Documentation = '\n                \n                 \n            '
-SRIOVAdapterPersonalities_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SRIOVAdapterPersonalities_Enum)
+SRIOVAdapterPersonalities_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SRIOVAdapterPersonalities_Enum, enum_prefix=None)
 SRIOVAdapterPersonalities_Enum.NoQoSSupport = SRIOVAdapterPersonalities_Enum._CF_enumeration.addEnumeration(unicode_value='NoQoSSupport', tag='NoQoSSupport')
 SRIOVAdapterPersonalities_Enum.SingleSettingQoSSupport = SRIOVAdapterPersonalities_Enum._CF_enumeration.addEnumeration(unicode_value='SingleSettingQoSSupport', tag='SingleSettingQoSSupport')
 SRIOVAdapterPersonalities_Enum.Unknown = SRIOVAdapterPersonalities_Enum._CF_enumeration.addEnumeration(unicode_value='Unknown', tag='Unknown')
@@ -1559,9 +1558,9 @@ class SRIOVLogicalPortOption_Enum (pyxb.binding.datatypes.string, pyxb.binding.b
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SRIOVLogicalPortOption.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3323, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3319, 4)
     _Documentation = '\n                \n                 \n            '
-SRIOVLogicalPortOption_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SRIOVLogicalPortOption_Enum)
+SRIOVLogicalPortOption_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=SRIOVLogicalPortOption_Enum, enum_prefix=None)
 SRIOVLogicalPortOption_Enum.PromiscousMode = SRIOVLogicalPortOption_Enum._CF_enumeration.addEnumeration(unicode_value='PromiscousMode', tag='PromiscousMode')
 SRIOVLogicalPortOption_Enum.DiagnosticMode = SRIOVLogicalPortOption_Enum._CF_enumeration.addEnumeration(unicode_value='DiagnosticMode', tag='DiagnosticMode')
 SRIOVLogicalPortOption_Enum.MACRestricted = SRIOVLogicalPortOption_Enum._CF_enumeration.addEnumeration(unicode_value='MACRestricted', tag='MACRestricted')
@@ -1573,42 +1572,6 @@ SRIOVLogicalPortOption_Enum.AssignedToVIOSPartition = SRIOVLogicalPortOption_Enu
 SRIOVLogicalPortOption_Enum._InitializeFacetMap(SRIOVLogicalPortOption_Enum._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'SRIOVLogicalPortOption.Enum', SRIOVLogicalPortOption_Enum)
 
-# Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}SupportedMACRestrictions.Enum
-class SupportedMACRestrictions_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mixin):
-
-    """
-                
-                 
-            """
-
-    _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SupportedMACRestrictions.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3415, 3)
-    _Documentation = '\n                \n                 \n            '
-SupportedMACRestrictions_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SupportedMACRestrictions_Enum)
-SupportedMACRestrictions_Enum.ALLOW_ALL_OS_DEFINED = SupportedMACRestrictions_Enum._CF_enumeration.addEnumeration(unicode_value='ALLOW_ALL_OS_DEFINED', tag='ALLOW_ALL_OS_DEFINED')
-SupportedMACRestrictions_Enum.DENY_ALL_OS_DEFINED = SupportedMACRestrictions_Enum._CF_enumeration.addEnumeration(unicode_value='DENY_ALL_OS_DEFINED', tag='DENY_ALL_OS_DEFINED')
-SupportedMACRestrictions_Enum.SPECIFY_ALLOWABLE_OS_DEFINED = SupportedMACRestrictions_Enum._CF_enumeration.addEnumeration(unicode_value='SPECIFY_ALLOWABLE_OS_DEFINED', tag='SPECIFY_ALLOWABLE_OS_DEFINED')
-SupportedMACRestrictions_Enum._InitializeFacetMap(SupportedMACRestrictions_Enum._CF_enumeration)
-Namespace.addCategoryObject('typeBinding', 'SupportedMACRestrictions.Enum', SupportedMACRestrictions_Enum)
-
-# Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}SupportedVLANRestrictions.Enum
-class SupportedVLANRestrictions_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mixin):
-
-    """
-                
-                 
-            """
-
-    _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SupportedVLANRestrictions.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3455, 3)
-    _Documentation = '\n                \n                 \n            '
-SupportedVLANRestrictions_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=SupportedVLANRestrictions_Enum)
-SupportedVLANRestrictions_Enum.ALLOW_ALL = SupportedVLANRestrictions_Enum._CF_enumeration.addEnumeration(unicode_value='ALLOW_ALL', tag='ALLOW_ALL')
-SupportedVLANRestrictions_Enum.DENY_VLAN_TAGGED = SupportedVLANRestrictions_Enum._CF_enumeration.addEnumeration(unicode_value='DENY_VLAN_TAGGED', tag='DENY_VLAN_TAGGED')
-SupportedVLANRestrictions_Enum.ALLOW_SPECIFIED = SupportedVLANRestrictions_Enum._CF_enumeration.addEnumeration(unicode_value='ALLOW_SPECIFIED', tag='ALLOW_SPECIFIED')
-SupportedVLANRestrictions_Enum._InitializeFacetMap(SupportedVLANRestrictions_Enum._CF_enumeration)
-Namespace.addCategoryObject('typeBinding', 'SupportedVLANRestrictions.Enum', SupportedVLANRestrictions_Enum)
-
 # Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}IPInterfaceState.Enum
 class IPInterfaceState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mixin):
 
@@ -1618,9 +1581,9 @@ class IPInterfaceState_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPInterfaceState.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3495, 5)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3411, 5)
     _Documentation = '\n                \n                 \n            '
-IPInterfaceState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=IPInterfaceState_Enum)
+IPInterfaceState_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=IPInterfaceState_Enum, enum_prefix=None)
 IPInterfaceState_Enum.Active = IPInterfaceState_Enum._CF_enumeration.addEnumeration(unicode_value='Active', tag='Active')
 IPInterfaceState_Enum.Inactive = IPInterfaceState_Enum._CF_enumeration.addEnumeration(unicode_value='Inactive', tag='Inactive')
 IPInterfaceState_Enum.Disconnected = IPInterfaceState_Enum._CF_enumeration.addEnumeration(unicode_value='Disconnected', tag='Disconnected')
@@ -1636,9 +1599,9 @@ class ReferenceType_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enum
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ReferenceType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3540, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3456, 1)
     _Documentation = '\n                \n                 \n            '
-ReferenceType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ReferenceType_Enum)
+ReferenceType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ReferenceType_Enum, enum_prefix=None)
 ReferenceType_Enum.VirtualNetwork = ReferenceType_Enum._CF_enumeration.addEnumeration(unicode_value='VirtualNetwork', tag='VirtualNetwork')
 ReferenceType_Enum.VirtualSwitch = ReferenceType_Enum._CF_enumeration.addEnumeration(unicode_value='VirtualSwitch', tag='VirtualSwitch')
 ReferenceType_Enum.VirtualIOServer = ReferenceType_Enum._CF_enumeration.addEnumeration(unicode_value='VirtualIOServer', tag='VirtualIOServer')
@@ -1654,9 +1617,9 @@ class VirtualOpticalMediaType_Enum (pyxb.binding.datatypes.string, pyxb.binding.
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VirtualOpticalMediaType.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonEnumerations.xsd', 3586, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonEnumerations.xsd', 3502, 4)
     _Documentation = '\n                \n                 \n            '
-VirtualOpticalMediaType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=VirtualOpticalMediaType_Enum)
+VirtualOpticalMediaType_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=VirtualOpticalMediaType_Enum, enum_prefix=None)
 VirtualOpticalMediaType_Enum.DEV = VirtualOpticalMediaType_Enum._CF_enumeration.addEnumeration(unicode_value='DEV', tag='DEV')
 VirtualOpticalMediaType_Enum.ISO = VirtualOpticalMediaType_Enum._CF_enumeration.addEnumeration(unicode_value='ISO', tag='ISO')
 VirtualOpticalMediaType_Enum.BLANK = VirtualOpticalMediaType_Enum._CF_enumeration.addEnumeration(unicode_value='BLANK', tag='BLANK')
@@ -1671,7 +1634,7 @@ class IPV4Address_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPV4Address.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 80, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 80, 4)
     _Documentation = '\n                \n            '
 IPV4Address_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 IPV4Address_Pattern._CF_pattern.addPattern(pattern='((25[0-5]|2[0-4]\\d|[01]?\\d{1,2})\\.){3}(25[0-5]|2[0-4]\\d|[01]?\\d{1,2})')
@@ -1686,7 +1649,7 @@ class IPV6Address_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPV6Address.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 104, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 104, 4)
     _Documentation = '\n                \n            '
 IPV6Address_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 IPV6Address_Pattern._CF_pattern.addPattern(pattern='((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)){3}))|:)))(%.+)?')
@@ -1701,7 +1664,7 @@ class MACAddress_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MACAddress.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 128, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 128, 4)
     _Documentation = '\n                \n            '
 MACAddress_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 MACAddress_Pattern._CF_pattern.addPattern(pattern='(([0-9a-fA-F]{12})|((([0-9a-fA-F]{1,2}[:]){5})[0-9a-fA-F]{1,2})|((([0-9a-fA-F]{1,2}[\\-]){5})[0-9a-fA-F]{1,2}))')
@@ -1717,7 +1680,7 @@ class GUID_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'GUID.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 167, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 167, 4)
     _Documentation = '\n                The representation of a GUID, generally as the id of an element. The difference\n                between a GUID and a UUID is that a GUID is wrapped with curly braces.\n            '
 GUID_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 GUID_Pattern._CF_pattern.addPattern(pattern='\\{[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\\}')
@@ -1733,7 +1696,7 @@ class UUID_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UUID.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 194, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 194, 4)
     _Documentation = '\n                The representation of a UUID, generally as the id of an element. The difference\n                between a GUID and a UUID is that a UUID is not wrapped with curly braces.\n            '
 UUID_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 UUID_Pattern._CF_pattern.addPattern(pattern='[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}')
@@ -1748,7 +1711,7 @@ class WWPN_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'WWPN.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 221, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 221, 4)
     _Documentation = '\n                \n            '
 WWPN_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 WWPN_Pattern._CF_pattern.addPattern(pattern='(([0-9a-fA-F]{16})|((([0-9a-fA-F]{1,2}[:]){7})[0-9a-fA-F]{1,2})|((([0-9a-fA-F]{1,2}[\\-]){7})[0-9a-fA-F]{1,2}))')
@@ -1766,7 +1729,7 @@ class Percent_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Percent.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 258, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 258, 4)
     _Documentation = '\n                Specifies a decimal percentage value from zero to 100 inclusive.\n                \n                \n                \n            '
 Percent_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 Percent_Pattern._CF_pattern.addPattern(pattern='(100|[1-9]?\\d)(\\.\\d*)?\\s*%')
@@ -1781,7 +1744,7 @@ class PhysicalLocation_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'PhysicalLocation.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 280, 5)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 280, 5)
     _Documentation = '\n                \n            '
 PhysicalLocation_Pattern._InitializeFacetMap()
 Namespace.addCategoryObject('typeBinding', 'PhysicalLocation.Pattern', PhysicalLocation_Pattern)
@@ -1794,7 +1757,7 @@ class UDID_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UDID.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 297, 5)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 297, 5)
     _Documentation = '\n                \n            '
 UDID_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 UDID_Pattern._CF_pattern.addPattern(pattern='[a-zA-Z0-9_]{1,32}')
@@ -1809,7 +1772,7 @@ class MachineType_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MachineType.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 315, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 315, 4)
     _Documentation = '\n                \n            '
 MachineType_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 MachineType_Pattern._CF_pattern.addPattern(pattern='[\\w]{4}')
@@ -1824,7 +1787,7 @@ class MachineModel_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MachineModel.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 340, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 340, 4)
     _Documentation = '\n                \n            '
 MachineModel_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 MachineModel_Pattern._CF_pattern.addPattern(pattern='[\\w]{3}')
@@ -1839,7 +1802,7 @@ class SerialNumber_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SerialNumber.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 365, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 365, 4)
     _Documentation = '\n                \n            '
 SerialNumber_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 SerialNumber_Pattern._CF_pattern.addPattern(pattern='[\\w\\-\\._]{2,11}')
@@ -1854,7 +1817,7 @@ class HostEthernetPhysicalPortID_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HostEthernetPhysicalPortID.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonPatterns.xsd', 390, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonPatterns.xsd', 390, 4)
     _Documentation = '\n                \n            '
 HostEthernetPhysicalPortID_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 HostEthernetPhysicalPortID_Pattern._CF_pattern.addPattern(pattern='([0-3]{1})')
@@ -1869,12 +1832,12 @@ class HardwarePageTableRatioExponent_Type (pyxb.binding.datatypes.unsignedShort)
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'HardwarePageTableRatioExponent.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 92, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 92, 1)
     _Documentation = '\n                \n            '
-HardwarePageTableRatioExponent_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.unsignedShort(8), value_datatype=HardwarePageTableRatioExponent_Type)
 HardwarePageTableRatioExponent_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.unsignedShort(1), value_datatype=HardwarePageTableRatioExponent_Type)
-HardwarePageTableRatioExponent_Type._InitializeFacetMap(HardwarePageTableRatioExponent_Type._CF_maxInclusive,
-   HardwarePageTableRatioExponent_Type._CF_minInclusive)
+HardwarePageTableRatioExponent_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.unsignedShort(8), value_datatype=HardwarePageTableRatioExponent_Type)
+HardwarePageTableRatioExponent_Type._InitializeFacetMap(HardwarePageTableRatioExponent_Type._CF_minInclusive,
+   HardwarePageTableRatioExponent_Type._CF_maxInclusive)
 Namespace.addCategoryObject('typeBinding', 'HardwarePageTableRatioExponent.Type', HardwarePageTableRatioExponent_Type)
 
 # Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Megabyte.Type
@@ -1885,7 +1848,7 @@ class Megabyte_Type (pyxb.binding.datatypes.decimal):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Megabyte.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 117, 5)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 117, 5)
     _Documentation = '\n                \n            '
 Megabyte_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.decimal('0.0'), value_datatype=Megabyte_Type)
 Megabyte_Type._InitializeFacetMap(Megabyte_Type._CF_minInclusive)
@@ -1899,14 +1862,14 @@ class ProcessorUnit_Type (pyxb.binding.datatypes.decimal):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ProcessorUnit.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 133, 6)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 133, 6)
     _Documentation = '\n                \n            '
 ProcessorUnit_Type._CF_fractionDigits = pyxb.binding.facets.CF_fractionDigits(value=pyxb.binding.datatypes.nonNegativeInteger(2))
-ProcessorUnit_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.decimal('2048.0'), value_datatype=ProcessorUnit_Type)
 ProcessorUnit_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.decimal('0.0'), value_datatype=ProcessorUnit_Type)
+ProcessorUnit_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.decimal('2048.0'), value_datatype=ProcessorUnit_Type)
 ProcessorUnit_Type._InitializeFacetMap(ProcessorUnit_Type._CF_fractionDigits,
-   ProcessorUnit_Type._CF_maxInclusive,
-   ProcessorUnit_Type._CF_minInclusive)
+   ProcessorUnit_Type._CF_minInclusive,
+   ProcessorUnit_Type._CF_maxInclusive)
 Namespace.addCategoryObject('typeBinding', 'ProcessorUnit.Type', ProcessorUnit_Type)
 
 # Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Range.Type
@@ -1917,12 +1880,12 @@ class Range_Type (pyxb.binding.datatypes.int):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Range.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 155, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 155, 3)
     _Documentation = '\n                \n            '
-Range_Type._CF_maxExclusive = pyxb.binding.facets.CF_maxExclusive(value=pyxb.binding.datatypes.long(15), value_datatype=pyxb.binding.datatypes.int)
 Range_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.int(0), value_datatype=Range_Type)
-Range_Type._InitializeFacetMap(Range_Type._CF_maxExclusive,
-   Range_Type._CF_minInclusive)
+Range_Type._CF_maxExclusive = pyxb.binding.facets.CF_maxExclusive(value=pyxb.binding.datatypes.long(15), value_datatype=pyxb.binding.datatypes.int)
+Range_Type._InitializeFacetMap(Range_Type._CF_minInclusive,
+   Range_Type._CF_maxExclusive)
 Namespace.addCategoryObject('typeBinding', 'Range.Type', Range_Type)
 
 # Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}MemoryWeight.Type
@@ -1933,12 +1896,12 @@ class MemoryWeight_Type (pyxb.binding.datatypes.unsignedInt):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MemoryWeight.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 177, 6)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 177, 6)
     _Documentation = '\n                \n            '
-MemoryWeight_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.unsignedInt(255), value_datatype=MemoryWeight_Type)
 MemoryWeight_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.unsignedInt(0), value_datatype=MemoryWeight_Type)
-MemoryWeight_Type._InitializeFacetMap(MemoryWeight_Type._CF_maxInclusive,
-   MemoryWeight_Type._CF_minInclusive)
+MemoryWeight_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.unsignedInt(255), value_datatype=MemoryWeight_Type)
+MemoryWeight_Type._InitializeFacetMap(MemoryWeight_Type._CF_minInclusive,
+   MemoryWeight_Type._CF_maxInclusive)
 Namespace.addCategoryObject('typeBinding', 'MemoryWeight.Type', MemoryWeight_Type)
 
 # Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}VLANID.Type
@@ -1949,7 +1912,7 @@ class VLANID_Type (pyxb.binding.datatypes.unsignedShort):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VLANID.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 200, 6)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 200, 6)
     _Documentation = '\n                \n            '
 VLANID_Type._InitializeFacetMap()
 Namespace.addCategoryObject('typeBinding', 'VLANID.Type', VLANID_Type)
@@ -1962,7 +1925,7 @@ class Gigabyte_Type (pyxb.binding.datatypes.decimal):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Gigabyte.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 217, 7)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 217, 7)
     _Documentation = '\n                \n            '
 Gigabyte_Type._CF_fractionDigits = pyxb.binding.facets.CF_fractionDigits(value=pyxb.binding.datatypes.nonNegativeInteger(6))
 Gigabyte_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.decimal('0.0'), value_datatype=Gigabyte_Type)
@@ -1979,7 +1942,7 @@ class DynamicReconfigurationConnectorIndex_Type (pyxb.binding.datatypes.unsigned
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'DynamicReconfigurationConnectorIndex.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 414, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 376, 4)
     _Documentation = '\n                \n                \n            '
 DynamicReconfigurationConnectorIndex_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.unsignedInt(65536), value_datatype=DynamicReconfigurationConnectorIndex_Type)
 DynamicReconfigurationConnectorIndex_Type._InitializeFacetMap(DynamicReconfigurationConnectorIndex_Type._CF_minInclusive)
@@ -1993,7 +1956,7 @@ class VirtualIOSlotIndex_Type (pyxb.binding.datatypes.unsignedShort):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VirtualIOSlotIndex.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 456, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 418, 4)
     _Documentation = '\n                \n            '
 VirtualIOSlotIndex_Type._InitializeFacetMap()
 Namespace.addCategoryObject('typeBinding', 'VirtualIOSlotIndex.Type', VirtualIOSlotIndex_Type)
@@ -2006,12 +1969,12 @@ class QualityOfServicePriority_Type (pyxb.binding.datatypes.int):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'QualityOfServicePriority.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 476, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 438, 4)
     _Documentation = '\n                \n            '
-QualityOfServicePriority_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.int(7), value_datatype=QualityOfServicePriority_Type)
 QualityOfServicePriority_Type._CF_minInclusive = pyxb.binding.facets.CF_minInclusive(value=pyxb.binding.datatypes.int(0), value_datatype=QualityOfServicePriority_Type)
-QualityOfServicePriority_Type._InitializeFacetMap(QualityOfServicePriority_Type._CF_maxInclusive,
-   QualityOfServicePriority_Type._CF_minInclusive)
+QualityOfServicePriority_Type._CF_maxInclusive = pyxb.binding.facets.CF_maxInclusive(value=pyxb.binding.datatypes.int(7), value_datatype=QualityOfServicePriority_Type)
+QualityOfServicePriority_Type._InitializeFacetMap(QualityOfServicePriority_Type._CF_minInclusive,
+   QualityOfServicePriority_Type._CF_maxInclusive)
 Namespace.addCategoryObject('typeBinding', 'QualityOfServicePriority.Type', QualityOfServicePriority_Type)
 
 # Atomic simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}False.Type
@@ -2020,7 +1983,7 @@ class False_Type (pyxb.binding.datatypes.boolean):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'False.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 26, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 26, 4)
     _Documentation = ''
 False_Type._CF_pattern = pyxb.binding.facets.CF_pattern()
 False_Type._CF_pattern.addPattern(pattern='false')
@@ -2033,7 +1996,7 @@ class True_Type (pyxb.binding.datatypes.boolean):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'True.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 41, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 41, 4)
     _Documentation = ''
 True_Type._CF_pattern = pyxb.binding.facets.CF_pattern()
 True_Type._CF_pattern.addPattern(pattern='true')
@@ -2046,9 +2009,9 @@ class COD_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'COD.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 13, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 13, 4)
     _Documentation = None
-COD_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=COD_Type)
+COD_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=COD_Type, enum_prefix=None)
 COD_Type.COD = COD_Type._CF_enumeration.addEnumeration(unicode_value='COD', tag='COD')
 COD_Type._InitializeFacetMap(COD_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'COD.Type', COD_Type)
@@ -2059,9 +2022,9 @@ class COR_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'COR.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 18, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 18, 4)
     _Documentation = None
-COR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=COR_Type)
+COR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=COR_Type, enum_prefix=None)
 COR_Type.COR = COR_Type._CF_enumeration.addEnumeration(unicode_value='COR', tag='COR')
 COR_Type._InitializeFacetMap(COR_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'COR.Type', COR_Type)
@@ -2072,9 +2035,9 @@ class CUD_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'CUD.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 23, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 23, 4)
     _Documentation = None
-CUD_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=CUD_Type)
+CUD_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=CUD_Type, enum_prefix=None)
 CUD_Type.CUD = CUD_Type._CF_enumeration.addEnumeration(unicode_value='CUD', tag='CUD')
 CUD_Type._InitializeFacetMap(CUD_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'CUD.Type', CUD_Type)
@@ -2085,9 +2048,9 @@ class CUR_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'CUR.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 28, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 28, 4)
     _Documentation = None
-CUR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=CUR_Type)
+CUR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=CUR_Type, enum_prefix=None)
 CUR_Type.CUR = CUR_Type._CF_enumeration.addEnumeration(unicode_value='CUR', tag='CUR')
 CUR_Type._InitializeFacetMap(CUR_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'CUR.Type', CUR_Type)
@@ -2098,9 +2061,9 @@ class CUA_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'CUA.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 33, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 33, 4)
     _Documentation = None
-CUA_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=CUA_Type)
+CUA_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=CUA_Type, enum_prefix=None)
 CUA_Type.CUA = CUA_Type._CF_enumeration.addEnumeration(unicode_value='CUA', tag='CUA')
 CUA_Type._InitializeFacetMap(CUA_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'CUA.Type', CUA_Type)
@@ -2111,9 +2074,9 @@ class UOD_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UOD.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 38, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 38, 4)
     _Documentation = None
-UOD_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=UOD_Type)
+UOD_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=UOD_Type, enum_prefix=None)
 UOD_Type.UOD = UOD_Type._CF_enumeration.addEnumeration(unicode_value='UOD', tag='UOD')
 UOD_Type._InitializeFacetMap(UOD_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'UOD.Type', UOD_Type)
@@ -2124,9 +2087,9 @@ class UOO_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UOO.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 43, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 43, 4)
     _Documentation = None
-UOO_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=UOO_Type)
+UOO_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=UOO_Type, enum_prefix=None)
 UOO_Type.UOO = UOO_Type._CF_enumeration.addEnumeration(unicode_value='UOO', tag='UOO')
 UOO_Type._InitializeFacetMap(UOO_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'UOO.Type', UOO_Type)
@@ -2137,9 +2100,9 @@ class UOR_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UOR.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 48, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 48, 4)
     _Documentation = None
-UOR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=UOR_Type)
+UOR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=UOR_Type, enum_prefix=None)
 UOR_Type.UOR = UOR_Type._CF_enumeration.addEnumeration(unicode_value='UOR', tag='UOR')
 UOR_Type._InitializeFacetMap(UOR_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'UOR.Type', UOR_Type)
@@ -2150,9 +2113,9 @@ class UOA_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UOA.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 53, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 53, 4)
     _Documentation = None
-UOA_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=UOA_Type)
+UOA_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=UOA_Type, enum_prefix=None)
 UOA_Type.UOA = UOA_Type._CF_enumeration.addEnumeration(unicode_value='UOA', tag='UOA')
 UOA_Type._InitializeFacetMap(UOA_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'UOA.Type', UOA_Type)
@@ -2163,9 +2126,9 @@ class ROO_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ROO.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 58, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 58, 4)
     _Documentation = None
-ROO_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ROO_Type)
+ROO_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ROO_Type, enum_prefix=None)
 ROO_Type.ROO = ROO_Type._CF_enumeration.addEnumeration(unicode_value='ROO', tag='ROO')
 ROO_Type._InitializeFacetMap(ROO_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'ROO.Type', ROO_Type)
@@ -2176,9 +2139,9 @@ class ROA_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ROA.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 63, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 63, 4)
     _Documentation = None
-ROA_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ROA_Type)
+ROA_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ROA_Type, enum_prefix=None)
 ROA_Type.ROA = ROA_Type._CF_enumeration.addEnumeration(unicode_value='ROA', tag='ROA')
 ROA_Type._InitializeFacetMap(ROA_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'ROA.Type', ROA_Type)
@@ -2189,9 +2152,9 @@ class ROR_Type (pyxb.binding.datatypes.string, pyxb.binding.basis.enumeration_mi
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ROR.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 68, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 68, 4)
     _Documentation = None
-ROR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=ROR_Type)
+ROR_Type._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=ROR_Type, enum_prefix=None)
 ROR_Type.ROR = ROR_Type._CF_enumeration.addEnumeration(unicode_value='ROR', tag='ROR')
 ROR_Type._InitializeFacetMap(ROR_Type._CF_enumeration)
 Namespace.addCategoryObject('typeBinding', 'ROR.Type', ROR_Type)
@@ -2202,9 +2165,9 @@ class Extended_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.enumerati
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Extended.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 74, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 74, 4)
     _Documentation = None
-Extended_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=Extended_Enum)
+Extended_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=Extended_Enum, enum_prefix=None)
 Extended_Enum.All = Extended_Enum._CF_enumeration.addEnumeration(unicode_value='All', tag='All')
 Extended_Enum.Advanced = Extended_Enum._CF_enumeration.addEnumeration(unicode_value='Advanced', tag='Advanced')
 Extended_Enum.Hypervisor = Extended_Enum._CF_enumeration.addEnumeration(unicode_value='Hypervisor', tag='Hypervisor')
@@ -2225,7 +2188,7 @@ class AtomMedia_Pattern (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AtomMedia.Pattern')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 132, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 132, 4)
     _Documentation = '\n                \n            '
 AtomMedia_Pattern._CF_pattern = pyxb.binding.facets.CF_pattern()
 AtomMedia_Pattern._CF_pattern.addPattern(pattern='.+/.+')
@@ -2240,7 +2203,7 @@ class AtomLanguageTag_Type (pyxb.binding.datatypes.string):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AtomLanguageTag.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 162, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 162, 4)
     _Documentation = '\n                \n            '
 AtomLanguageTag_Type._CF_pattern = pyxb.binding.facets.CF_pattern()
 AtomLanguageTag_Type._CF_pattern.addPattern(pattern='[A-Za-z]{1,8}(-[A-Za-z0-9]{1,8})*')
@@ -2259,9 +2222,9 @@ class IanaRelationship_Enum (pyxb.binding.datatypes.string, pyxb.binding.basis.e
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IanaRelationship.Enum')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 275, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 275, 4)
     _Documentation = '\n                \n                \n\n                \n                \n            '
-IanaRelationship_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(enum_prefix=None, value_datatype=IanaRelationship_Enum)
+IanaRelationship_Enum._CF_enumeration = pyxb.binding.facets.CF_enumeration(value_datatype=IanaRelationship_Enum, enum_prefix=None)
 IanaRelationship_Enum.alternate = IanaRelationship_Enum._CF_enumeration.addEnumeration(unicode_value='alternate', tag='alternate')
 IanaRelationship_Enum.appendix = IanaRelationship_Enum._CF_enumeration.addEnumeration(unicode_value='appendix', tag='appendix')
 IanaRelationship_Enum.archives = IanaRelationship_Enum._CF_enumeration.addEnumeration(unicode_value='archives', tag='archives')
@@ -2328,7 +2291,7 @@ class IPV4Address_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPV4Address.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 87, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 87, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = IPV4Address_Pattern
@@ -2344,7 +2307,7 @@ class IPV6Address_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPV6Address.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 110, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 110, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = IPV6Address_Pattern
@@ -2360,7 +2323,7 @@ class MACAddress_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MACAddress.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 133, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 133, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = MACAddress_Pattern
@@ -2376,7 +2339,7 @@ class UUID_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'UUID.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 183, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 183, 4)
     _Documentation = '\n            \t \n            '
 
     _ItemType = UUID_Pattern
@@ -2392,7 +2355,7 @@ class WWPN_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'WWPN.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 203, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 203, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = WWPN_Pattern
@@ -2408,7 +2371,7 @@ class VLANID_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VLANID.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 250, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 250, 2)
     _Documentation = '\n                \n            '
 
     _ItemType = VLANID_Type
@@ -2424,7 +2387,7 @@ class MultiCoreScalingValue_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MultiCoreScalingValue.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 273, 1)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 273, 1)
     _Documentation = '\n            \t \n            '
 
     _ItemType = MultiCoreScalingValue_Enum
@@ -2440,7 +2403,7 @@ class IPAddress_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPAddress.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 289, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 289, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = IPV4Address_Pattern
@@ -2456,7 +2419,7 @@ class IPAddress_Union (pyxb.binding.basis.STD_union):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'IPAddress.Union')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 290, 3)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 290, 3)
     _Documentation = '\n                \n            '
 
     _MemberTypes = ( IPV4Address_Pattern, IPV6Address_Pattern, )
@@ -2472,51 +2435,13 @@ class EntitledIOMegabyte_Union (pyxb.binding.basis.STD_union):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'EntitledIOMegabyte.Union')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 310, 5)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 310, 5)
     _Documentation = '\n                \n            '
 
     _MemberTypes = ( Auto_Enum, Megabyte_Type, )
 EntitledIOMegabyte_Union.AUTO = 'AUTO'            # originally Auto_Enum.AUTO
 EntitledIOMegabyte_Union._InitializeFacetMap()
 Namespace.addCategoryObject('typeBinding', 'EntitledIOMegabyte.Union', EntitledIOMegabyte_Union)
-
-# Union simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}SupportedMACRestrictions.Union
-# superclasses pyxb.binding.datatypes.anySimpleType
-class SupportedMACRestrictions_Union (pyxb.binding.basis.STD_union):
-
-    """
-                
-            """
-
-    _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SupportedMACRestrictions.Union')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 376, 4)
-    _Documentation = '\n                \n            '
-
-    _MemberTypes = ( SupportedMACRestrictions_Enum, )
-SupportedMACRestrictions_Union.ALLOW_ALL_OS_DEFINED = 'ALLOW_ALL_OS_DEFINED'# originally SupportedMACRestrictions_Enum.ALLOW_ALL_OS_DEFINED
-SupportedMACRestrictions_Union.DENY_ALL_OS_DEFINED = 'DENY_ALL_OS_DEFINED'# originally SupportedMACRestrictions_Enum.DENY_ALL_OS_DEFINED
-SupportedMACRestrictions_Union.SPECIFY_ALLOWABLE_OS_DEFINED = 'SPECIFY_ALLOWABLE_OS_DEFINED'# originally SupportedMACRestrictions_Enum.SPECIFY_ALLOWABLE_OS_DEFINED
-SupportedMACRestrictions_Union._InitializeFacetMap()
-Namespace.addCategoryObject('typeBinding', 'SupportedMACRestrictions.Union', SupportedMACRestrictions_Union)
-
-# Union simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}SupportedVLANRestrictions.Union
-# superclasses pyxb.binding.datatypes.anySimpleType
-class SupportedVLANRestrictions_Union (pyxb.binding.basis.STD_union):
-
-    """
-                
-            """
-
-    _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'SupportedVLANRestrictions.Union')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 395, 4)
-    _Documentation = '\n                \n            '
-
-    _MemberTypes = ( SupportedVLANRestrictions_Enum, )
-SupportedVLANRestrictions_Union.ALLOW_ALL = 'ALLOW_ALL'# originally SupportedVLANRestrictions_Enum.ALLOW_ALL
-SupportedVLANRestrictions_Union.DENY_VLAN_TAGGED = 'DENY_VLAN_TAGGED'# originally SupportedVLANRestrictions_Enum.DENY_VLAN_TAGGED
-SupportedVLANRestrictions_Union.ALLOW_SPECIFIED = 'ALLOW_SPECIFIED'# originally SupportedVLANRestrictions_Enum.ALLOW_SPECIFIED
-SupportedVLANRestrictions_Union._InitializeFacetMap()
-Namespace.addCategoryObject('typeBinding', 'SupportedVLANRestrictions.Union', SupportedVLANRestrictions_Union)
 
 # List simple type: {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}MACAddress4.List
 # superclasses MACAddress_List
@@ -2527,7 +2452,7 @@ class MACAddress4_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MACAddress4.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 156, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 156, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = MACAddress_Pattern
@@ -2546,7 +2471,7 @@ class WWPN2_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'WWPN2.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonLists.xsd', 226, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonLists.xsd', 226, 4)
     _Documentation = '\n                \n            '
 
     _ItemType = WWPN_Pattern
@@ -2565,7 +2490,7 @@ class VLANID20_List (pyxb.binding.basis.STD_list):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'VLANID20.List')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 261, 2)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 261, 2)
     _Documentation = '\n                \n            '
 
     _ItemType = VLANID_Type
@@ -2584,7 +2509,7 @@ class AllowedVLANIDs_Union (pyxb.binding.basis.STD_union):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AllowedVLANIDs.Union')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 336, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 336, 4)
     _Documentation = '\n                \n            '
 
     _MemberTypes = ( AllOrNone_Enum, VLANID20_List, )
@@ -2602,7 +2527,7 @@ class AllowedMACAddresses_Union (pyxb.binding.basis.STD_union):
             """
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AllowedMACAddresses.Union')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 356, 6)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 356, 6)
     _Documentation = '\n                \n            '
 
     _MemberTypes = ( AllOrNone_Enum, MACAddress4_List, )
@@ -2618,13 +2543,13 @@ class CommonRESTCollection_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'CommonRESTCollection.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 160, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 160, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}link uses Python identifier link
-    __link = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'link'), 'link', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CommonRESTCollection_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10link', True, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 73, 12), )
+    __link = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'link'), 'link', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CommonRESTCollection_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10link', True, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 73, 12), )
 
     
     link = property(__link.value, __link.set, None, None)
@@ -2647,13 +2572,13 @@ class Metadata_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'Metadata.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 102, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 102, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Atom uses Python identifier Atom
-    __Atom = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Atom'), 'Atom', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_Metadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Atom', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 141, 12), )
+    __Atom = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Atom'), 'Atom', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_Metadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Atom', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 141, 12), )
 
     
     Atom = property(__Atom.value, __Atom.set, None, None)
@@ -2676,27 +2601,27 @@ class AtomMetadata_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AtomMetadata.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 155, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 155, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AtomID uses Python identifier AtomID
-    __AtomID = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AtomID'), 'AtomID', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomMetadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AtomID', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 201, 12), )
+    __AtomID = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AtomID'), 'AtomID', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomMetadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AtomID', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 201, 12), )
 
     
     AtomID = property(__AtomID.value, __AtomID.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AtomCreated uses Python identifier AtomCreated
-    __AtomCreated = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AtomCreated'), 'AtomCreated', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomMetadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AtomCreated', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 250, 12), )
+    __AtomCreated = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AtomCreated'), 'AtomCreated', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomMetadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AtomCreated', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 250, 12), )
 
     
     AtomCreated = property(__AtomCreated.value, __AtomCreated.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AtomUpdated uses Python identifier AtomUpdated
-    __AtomUpdated = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AtomUpdated'), 'AtomUpdated', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomMetadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AtomUpdated', True, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 276, 12), )
+    __AtomUpdated = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AtomUpdated'), 'AtomUpdated', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomMetadata_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AtomUpdated', True, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 276, 12), )
 
     
     AtomUpdated = property(__AtomUpdated.value, __AtomUpdated.set, None, None)
@@ -2721,7 +2646,7 @@ class AtomDateTime_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AtomDateTime.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 291, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 291, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.long
@@ -2743,13 +2668,13 @@ class AbstractRest_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = True
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AbstractRest.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 101, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 101, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Metadata uses Python identifier Metadata
-    __Metadata = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), 'Metadata', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Metadata', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12), )
+    __Metadata = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), 'Metadata', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Metadata', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12), )
 
     
     Metadata = property(__Metadata.value, __Metadata.set, None, None)
@@ -2757,40 +2682,40 @@ class AbstractRest_Type (pyxb.binding.basis.complexTypeDefinition):
     
     # Attribute schemaVersion uses Python identifier schemaVersion
     __schemaVersion = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'schemaVersion'), 'schemaVersion', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_schemaVersion', SchemaVersion_Enum, required=True)
-    __schemaVersion._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
-    __schemaVersion._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
+    __schemaVersion._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
+    __schemaVersion._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
     
     schemaVersion = property(__schemaVersion.value, __schemaVersion.set, None, '\n                    \n                    \n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}base uses Python identifier base
     __base = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'base'), 'base', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_httpwww_w3_orgXML1998namespacek2base', pyxb.binding.datatypes.anyURI)
-    __base._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 92, 8)
-    __base._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 92, 8)
+    __base._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 92, 8)
+    __base._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 92, 8)
     
     base = property(__base.value, __base.set, None, '\n                    See\n                    \n                    for information about this attribute.\n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}lang uses Python identifier lang
     __lang = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'lang'), 'lang', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_httpwww_w3_orgXML1998namespacek2lang', pyxb.binding.datatypes.string)
-    __lang._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 109, 8)
-    __lang._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 109, 8)
+    __lang._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 109, 8)
+    __lang._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 109, 8)
     
     lang = property(__lang.value, __lang.set, None, '\n                    See "Extensible Markup Language (XML) 1.0\n                    (Fifth Edition)",\n                    section 2.12 "Language\n                    Identification,"\n                    at\n                    \n                    , for a full description.\n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}space uses Python identifier space
     __space = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'space'), 'space', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_httpwww_w3_orgXML1998namespacek2space', pyxb.binding.datatypes.string)
-    __space._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 144, 8)
-    __space._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 144, 8)
+    __space._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 144, 8)
+    __space._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 144, 8)
     
     space = property(__space.value, __space.set, None, '\n                    See "Extensible Markup Language (XML) 1.0 (Fifth Edition)",\n                    section 2.10 "White\n                    Space Handling," at\n                    \n                    , for a full description.\n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'id'), 'id', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractRest_Type_httpwww_w3_orgXML1998namespacek2id', pyxb.binding.datatypes.ID)
-    __id._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 173, 8)
-    __id._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 173, 8)
+    __id._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 173, 8)
+    __id._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 173, 8)
     
     id = property(__id.value, __id.set, None, '\n                    See\n                    \n                    for\n                    information about this attribute.\n                ')
 
@@ -2816,13 +2741,13 @@ class AbstractNonRest_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = True
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AbstractNonRest.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 129, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 129, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Metadata uses Python identifier Metadata
-    __Metadata = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), 'Metadata', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Metadata', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12), )
+    __Metadata = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), 'Metadata', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Metadata', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12), )
 
     
     Metadata = property(__Metadata.value, __Metadata.set, None, None)
@@ -2830,40 +2755,40 @@ class AbstractNonRest_Type (pyxb.binding.basis.complexTypeDefinition):
     
     # Attribute schemaVersion uses Python identifier schemaVersion
     __schemaVersion = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'schemaVersion'), 'schemaVersion', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_schemaVersion', SchemaVersion_Enum, required=True)
-    __schemaVersion._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
-    __schemaVersion._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
+    __schemaVersion._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
+    __schemaVersion._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 335, 8)
     
     schemaVersion = property(__schemaVersion.value, __schemaVersion.set, None, '\n                    \n                    \n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}base uses Python identifier base
     __base = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'base'), 'base', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_httpwww_w3_orgXML1998namespacek2base', pyxb.binding.datatypes.anyURI)
-    __base._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 92, 8)
-    __base._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 92, 8)
+    __base._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 92, 8)
+    __base._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 92, 8)
     
     base = property(__base.value, __base.set, None, '\n                    See\n                    \n                    for information about this attribute.\n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}lang uses Python identifier lang
     __lang = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'lang'), 'lang', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_httpwww_w3_orgXML1998namespacek2lang', pyxb.binding.datatypes.string)
-    __lang._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 109, 8)
-    __lang._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 109, 8)
+    __lang._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 109, 8)
+    __lang._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 109, 8)
     
     lang = property(__lang.value, __lang.set, None, '\n                    See "Extensible Markup Language (XML) 1.0\n                    (Fifth Edition)",\n                    section 2.12 "Language\n                    Identification,"\n                    at\n                    \n                    , for a full description.\n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}space uses Python identifier space
     __space = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'space'), 'space', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_httpwww_w3_orgXML1998namespacek2space', pyxb.binding.datatypes.string)
-    __space._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 144, 8)
-    __space._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 144, 8)
+    __space._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 144, 8)
+    __space._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 144, 8)
     
     space = property(__space.value, __space.set, None, '\n                    See "Extensible Markup Language (XML) 1.0 (Fifth Edition)",\n                    section 2.10 "White\n                    Space Handling," at\n                    \n                    , for a full description.\n                ')
 
     
     # Attribute {http://www.w3.org/XML/1998/namespace/k2}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(_Namespace_xmlk2, 'id'), 'id', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AbstractNonRest_Type_httpwww_w3_orgXML1998namespacek2id', pyxb.binding.datatypes.ID)
-    __id._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 173, 8)
-    __id._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/w3c/xml.xsd', 173, 8)
+    __id._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 173, 8)
+    __id._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/w3c/xml.xsd', 173, 8)
     
     id = property(__id.value, __id.set, None, '\n                    See\n                    \n                    for\n                    information about this attribute.\n                ')
 
@@ -2889,7 +2814,7 @@ class AtomID_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AtomID.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 216, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 216, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is UUID_Pattern
@@ -2914,55 +2839,55 @@ class AtomLink_Type (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_EMPTY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'AtomLink.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 91, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 91, 4)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Attribute href uses Python identifier href
     __href = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'href'), 'href', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomLink_Type_href', pyxb.binding.datatypes.anyURI, required=True)
-    __href._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 206, 8)
-    __href._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 206, 8)
+    __href._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 206, 8)
+    __href._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 206, 8)
     
     href = property(__href.value, __href.set, None, '\n                    \n                ')
 
     
     # Attribute rel uses Python identifier rel
     __rel = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'rel'), 'rel', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomLink_Type_rel', IanaRelationship_Enum, required=True)
-    __rel._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 219, 8)
-    __rel._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 219, 8)
+    __rel._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 219, 8)
+    __rel._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 219, 8)
     
     rel = property(__rel.value, __rel.set, None, '\n                    \n                ')
 
     
     # Attribute type uses Python identifier type
     __type = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'type'), 'type', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomLink_Type_type', AtomMedia_Pattern)
-    __type._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 232, 8)
-    __type._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 232, 8)
+    __type._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 232, 8)
+    __type._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 232, 8)
     
     type = property(__type.value, __type.set, None, '\n                    \n                ')
 
     
     # Attribute hreflang uses Python identifier hreflang
     __hreflang = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'hreflang'), 'hreflang', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomLink_Type_hreflang', AtomLanguageTag_Type)
-    __hreflang._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 249, 8)
-    __hreflang._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 249, 8)
+    __hreflang._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 249, 8)
+    __hreflang._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 249, 8)
     
     hreflang = property(__hreflang.value, __hreflang.set, None, None)
 
     
     # Attribute title uses Python identifier title
     __title = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'title'), 'title', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomLink_Type_title', pyxb.binding.datatypes.string)
-    __title._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 255, 8)
-    __title._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 255, 8)
+    __title._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 255, 8)
+    __title._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 255, 8)
     
     title = property(__title.value, __title.set, None, None)
 
     
     # Attribute length uses Python identifier length
     __length = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'length'), 'length', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_AtomLink_Type_length', pyxb.binding.datatypes.integer)
-    __length._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 261, 8)
-    __length._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 261, 8)
+    __length._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 261, 8)
+    __length._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 261, 8)
     
     length = property(__length.value, __length.set, None, None)
 
@@ -2987,23 +2912,23 @@ class CTD_ANON (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 79, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 79, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is MachineType_Pattern
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_kb', ROR_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3024,23 +2949,23 @@ class CTD_ANON_ (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 96, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 96, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is MachineModel_Pattern
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON__kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON__kb', ROR_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3061,23 +2986,23 @@ class CTD_ANON_2 (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 113, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 113, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is SerialNumber_Pattern
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_2_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_2_kb', ROR_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3098,23 +3023,23 @@ class CTD_ANON_3 (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 80, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 80, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_3_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_3_kb', ROR_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3135,23 +3060,23 @@ class CTD_ANON_4 (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 114, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 114, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_4_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_4_kb', UOD_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3172,23 +3097,23 @@ class CTD_ANON_5 (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 131, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 131, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_5_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_5_kb', UOD_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3209,23 +3134,23 @@ class CTD_ANON_6 (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 148, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 148, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_6_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_6_kb', UOD_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3246,31 +3171,31 @@ class CTD_ANON_7 (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 165, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 165, 16)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_7_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_7_kb', UOD_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 105, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
     
     # Attribute ksv uses Python identifier ksv
     __ksv = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'ksv'), 'ksv', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_7_ksv', pyxb.binding.datatypes.anySimpleType, fixed=True, unicode_default='V1_1_0', required=True)
-    __ksv._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 176, 28)
-    __ksv._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 176, 28)
+    __ksv._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 176, 28)
+    __ksv._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 176, 28)
     
     ksv = property(__ksv.value, __ksv.set, None, None)
 
@@ -3294,7 +3219,7 @@ class OpaqueDataBlobReference_Type (AtomLink_Type):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_EMPTY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'OpaqueDataBlobReference.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonTypes.xsd', 438, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonTypes.xsd', 400, 4)
     _ElementMap = AtomLink_Type._ElementMap.copy()
     _AttributeMap = AtomLink_Type._AttributeMap.copy()
     # Base type is AtomLink_Type
@@ -3329,7 +3254,7 @@ class MachineTypeModelSerialNumber_Type (AbstractNonRest_Type):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 145, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 145, 4)
     _ElementMap = AbstractNonRest_Type._ElementMap.copy()
     _AttributeMap = AbstractNonRest_Type._AttributeMap.copy()
     # Base type is AbstractNonRest_Type
@@ -3337,21 +3262,21 @@ class MachineTypeModelSerialNumber_Type (AbstractNonRest_Type):
     # Element Metadata ({http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Metadata) inherited from {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AbstractNonRest.Type
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}MachineType uses Python identifier MachineType
-    __MachineType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'MachineType'), 'MachineType', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_MachineTypeModelSerialNumber_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10MachineType', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8), )
+    __MachineType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'MachineType'), 'MachineType', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_MachineTypeModelSerialNumber_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10MachineType', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8), )
 
     
     MachineType = property(__MachineType.value, __MachineType.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Model uses Python identifier Model
-    __Model = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Model'), 'Model', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_MachineTypeModelSerialNumber_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Model', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12), )
+    __Model = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'Model'), 'Model', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_MachineTypeModelSerialNumber_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10Model', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12), )
 
     
     Model = property(__Model.value, __Model.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}SerialNumber uses Python identifier SerialNumber
-    __SerialNumber = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber'), 'SerialNumber', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_MachineTypeModelSerialNumber_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10SerialNumber', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12), )
+    __SerialNumber = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber'), 'SerialNumber', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_MachineTypeModelSerialNumber_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10SerialNumber', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12), )
 
     
     SerialNumber = property(__SerialNumber.value, __SerialNumber.set, None, None)
@@ -3384,23 +3309,23 @@ class CTD_ANON_8 (AtomLink_Type):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_EMPTY
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 182, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 182, 16)
     _ElementMap = AtomLink_Type._ElementMap.copy()
     _AttributeMap = AtomLink_Type._AttributeMap.copy()
     # Base type is AtomLink_Type
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_8_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_8_kb', ROO_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 117, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 117, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 117, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 117, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3436,7 +3361,7 @@ class ManagedSystemPcmPreference_Type (AbstractRest_Type):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'ManagedSystemPcmPreference.Type')
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 213, 4)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 213, 4)
     _ElementMap = AbstractRest_Type._ElementMap.copy()
     _AttributeMap = AbstractRest_Type._AttributeMap.copy()
     # Base type is AbstractRest_Type
@@ -3444,49 +3369,49 @@ class ManagedSystemPcmPreference_Type (AbstractRest_Type):
     # Element Metadata ({http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}Metadata) inherited from {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AbstractRest.Type
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}SystemName uses Python identifier SystemName
-    __SystemName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'SystemName'), 'SystemName', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10SystemName', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 79, 8), )
+    __SystemName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'SystemName'), 'SystemName', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10SystemName', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 79, 8), )
 
     
     SystemName = property(__SystemName.value, __SystemName.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}MachineTypeModelSerialNumber uses Python identifier MachineTypeModelSerialNumber
-    __MachineTypeModelSerialNumber = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber'), 'MachineTypeModelSerialNumber', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10MachineTypeModelSerialNumber', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 96, 12), )
+    __MachineTypeModelSerialNumber = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber'), 'MachineTypeModelSerialNumber', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10MachineTypeModelSerialNumber', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 96, 12), )
 
     
     MachineTypeModelSerialNumber = property(__MachineTypeModelSerialNumber.value, __MachineTypeModelSerialNumber.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}LongTermMonitorEnabled uses Python identifier LongTermMonitorEnabled
-    __LongTermMonitorEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'LongTermMonitorEnabled'), 'LongTermMonitorEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10LongTermMonitorEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 113, 12), )
+    __LongTermMonitorEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'LongTermMonitorEnabled'), 'LongTermMonitorEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10LongTermMonitorEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 113, 12), )
 
     
     LongTermMonitorEnabled = property(__LongTermMonitorEnabled.value, __LongTermMonitorEnabled.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AggregationEnabled uses Python identifier AggregationEnabled
-    __AggregationEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AggregationEnabled'), 'AggregationEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AggregationEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 130, 12), )
+    __AggregationEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AggregationEnabled'), 'AggregationEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AggregationEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 130, 12), )
 
     
     AggregationEnabled = property(__AggregationEnabled.value, __AggregationEnabled.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}ShortTermMonitorEnabled uses Python identifier ShortTermMonitorEnabled
-    __ShortTermMonitorEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ShortTermMonitorEnabled'), 'ShortTermMonitorEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10ShortTermMonitorEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 147, 12), )
+    __ShortTermMonitorEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ShortTermMonitorEnabled'), 'ShortTermMonitorEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10ShortTermMonitorEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 147, 12), )
 
     
     ShortTermMonitorEnabled = property(__ShortTermMonitorEnabled.value, __ShortTermMonitorEnabled.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}ComputeLTMEnabled uses Python identifier ComputeLTMEnabled
-    __ComputeLTMEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ComputeLTMEnabled'), 'ComputeLTMEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10ComputeLTMEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12), )
+    __ComputeLTMEnabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ComputeLTMEnabled'), 'ComputeLTMEnabled', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10ComputeLTMEnabled', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12), )
 
     
     ComputeLTMEnabled = property(__ComputeLTMEnabled.value, __ComputeLTMEnabled.set, None, None)
 
     
     # Element {http://www.ibm.com/xmlns/systems/power/firmware/pcm/mc/2012_10/}AssociatedManagedSystem uses Python identifier AssociatedManagedSystem
-    __AssociatedManagedSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AssociatedManagedSystem'), 'AssociatedManagedSystem', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AssociatedManagedSystem', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 181, 12), )
+    __AssociatedManagedSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AssociatedManagedSystem'), 'AssociatedManagedSystem', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_ManagedSystemPcmPreference_Type_httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10AssociatedManagedSystem', False, pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 181, 12), )
 
     
     AssociatedManagedSystem = property(__AssociatedManagedSystem.value, __AssociatedManagedSystem.set, None, None)
@@ -3523,7 +3448,7 @@ class CTD_ANON_9 (MachineTypeModelSerialNumber_Type):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = None
-    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 97, 16)
+    _XSDLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 97, 16)
     _ElementMap = MachineTypeModelSerialNumber_Type._ElementMap.copy()
     _AttributeMap = MachineTypeModelSerialNumber_Type._AttributeMap.copy()
     # Base type is MachineTypeModelSerialNumber_Type
@@ -3540,16 +3465,16 @@ class CTD_ANON_9 (MachineTypeModelSerialNumber_Type):
     
     # Attribute kxe uses Python identifier kxe
     __kxe = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kxe'), 'kxe', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_9_kxe', False_Type)
-    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
-    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
+    __kxe._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/ETagBehavior.xsd', 21, 8)
     
     kxe = property(__kxe.value, __kxe.set, None, None)
 
     
     # Attribute kb uses Python identifier kb
     __kb = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'kb'), 'kb', '__httpwww_ibm_comxmlnssystemspowerfirmwarepcmmc2012_10_CTD_ANON_9_kb', ROR_Type)
-    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
-    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._DeclarationLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
+    __kb._UseLocation = pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/RESTStereotypes.xsd', 123, 8)
     
     kb = property(__kb.value, __kb.set, None, None)
 
@@ -3571,21 +3496,21 @@ class CTD_ANON_9 (MachineTypeModelSerialNumber_Type):
 
 
 
-AbstractRest = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AbstractRest'), AbstractRest_Type, documentation='\n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 52, 4))
+AbstractRest = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AbstractRest'), AbstractRest_Type, documentation='\n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 52, 4))
 Namespace.addCategoryObject('elementBinding', AbstractRest.name().localName(), AbstractRest)
 
-AbstractNonRest = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AbstractNonRest'), AbstractNonRest_Type, documentation='\n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 67, 4))
+AbstractNonRest = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AbstractNonRest'), AbstractNonRest_Type, documentation='\n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 67, 4))
 Namespace.addCategoryObject('elementBinding', AbstractNonRest.name().localName(), AbstractNonRest)
 
-MachineTypeModelSerialNumber = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber'), MachineTypeModelSerialNumber_Type, documentation='\n                \n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 46, 4))
+MachineTypeModelSerialNumber = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber'), MachineTypeModelSerialNumber_Type, documentation='\n                \n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 46, 4))
 Namespace.addCategoryObject('elementBinding', MachineTypeModelSerialNumber.name().localName(), MachineTypeModelSerialNumber)
 
-ManagedSystemPcmPreference = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'ManagedSystemPcmPreference'), ManagedSystemPcmPreference_Type, documentation='\n                \n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 47, 4))
+ManagedSystemPcmPreference = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'ManagedSystemPcmPreference'), ManagedSystemPcmPreference_Type, documentation='\n                \n                \n            ', location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 47, 4))
 Namespace.addCategoryObject('elementBinding', ManagedSystemPcmPreference.name().localName(), ManagedSystemPcmPreference)
 
 
 
-CommonRESTCollection_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'link'), AtomLink_Type, scope=CommonRESTCollection_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 73, 12)))
+CommonRESTCollection_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'link'), AtomLink_Type, scope=CommonRESTCollection_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 73, 12)))
 
 def _BuildAutomaton ():
     # Remove this helper function from the namespace after it is invoked
@@ -3594,15 +3519,15 @@ def _BuildAutomaton ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 167, 8))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 167, 8))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 170, 12))
+    cc_1 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 170, 12))
     counters.add(cc_1)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
     final_update.add(fac.UpdateInstruction(cc_1, False))
-    symbol = pyxb.binding.content.ElementUse(CommonRESTCollection_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'link')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/ietf/AtomLink.xsd', 73, 12))
+    symbol = pyxb.binding.content.ElementUse(CommonRESTCollection_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'link')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/ietf/AtomLink.xsd', 73, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     transitions = []
@@ -3618,7 +3543,7 @@ CommonRESTCollection_Type._Automaton = _BuildAutomaton()
 
 
 
-Metadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Atom'), AtomMetadata_Type, scope=Metadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 141, 12)))
+Metadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Atom'), AtomMetadata_Type, scope=Metadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 141, 12)))
 
 def _BuildAutomaton_ ():
     # Remove this helper function from the namespace after it is invoked
@@ -3629,7 +3554,7 @@ def _BuildAutomaton_ ():
     counters = set()
     states = []
     final_update = set()
-    symbol = pyxb.binding.content.ElementUse(Metadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Atom')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 141, 12))
+    symbol = pyxb.binding.content.ElementUse(Metadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Atom')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 141, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     transitions = []
@@ -3640,11 +3565,11 @@ Metadata_Type._Automaton = _BuildAutomaton_()
 
 
 
-AtomMetadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AtomID'), AtomID_Type, scope=AtomMetadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 201, 12)))
+AtomMetadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AtomID'), AtomID_Type, scope=AtomMetadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 201, 12)))
 
-AtomMetadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AtomCreated'), AtomDateTime_Type, scope=AtomMetadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 250, 12)))
+AtomMetadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AtomCreated'), AtomDateTime_Type, scope=AtomMetadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 250, 12)))
 
-AtomMetadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AtomUpdated'), AtomDateTime_Type, scope=AtomMetadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 276, 12)))
+AtomMetadata_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AtomUpdated'), AtomDateTime_Type, scope=AtomMetadata_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 276, 12)))
 
 def _BuildAutomaton_2 ():
     # Remove this helper function from the namespace after it is invoked
@@ -3653,26 +3578,26 @@ def _BuildAutomaton_2 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 167, 12))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 167, 12))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 171, 12))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 171, 12))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 175, 12))
+    cc_2 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 175, 12))
     counters.add(cc_2)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(AtomMetadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AtomID')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 201, 12))
+    symbol = pyxb.binding.content.ElementUse(AtomMetadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AtomID')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 201, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_1, False))
-    symbol = pyxb.binding.content.ElementUse(AtomMetadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AtomCreated')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 250, 12))
+    symbol = pyxb.binding.content.ElementUse(AtomMetadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AtomCreated')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 250, 12))
     st_1 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_1)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_2, False))
-    symbol = pyxb.binding.content.ElementUse(AtomMetadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AtomUpdated')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 276, 12))
+    symbol = pyxb.binding.content.ElementUse(AtomMetadata_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AtomUpdated')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 276, 12))
     st_2 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_2)
     transitions = []
@@ -3699,7 +3624,7 @@ AtomMetadata_Type._Automaton = _BuildAutomaton_2()
 
 
 
-AbstractRest_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), Metadata_Type, scope=AbstractRest_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12)))
+AbstractRest_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), Metadata_Type, scope=AbstractRest_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12)))
 
 def _BuildAutomaton_3 ():
     # Remove this helper function from the namespace after it is invoked
@@ -3708,12 +3633,12 @@ def _BuildAutomaton_3 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 117, 12))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 117, 12))
     counters.add(cc_0)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(AbstractRest_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
+    symbol = pyxb.binding.content.ElementUse(AbstractRest_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     transitions = []
@@ -3726,7 +3651,7 @@ AbstractRest_Type._Automaton = _BuildAutomaton_3()
 
 
 
-AbstractNonRest_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), Metadata_Type, scope=AbstractNonRest_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12)))
+AbstractNonRest_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Metadata'), Metadata_Type, scope=AbstractNonRest_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12)))
 
 def _BuildAutomaton_4 ():
     # Remove this helper function from the namespace after it is invoked
@@ -3735,12 +3660,12 @@ def _BuildAutomaton_4 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 148, 12))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 148, 12))
     counters.add(cc_0)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(AbstractNonRest_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
+    symbol = pyxb.binding.content.ElementUse(AbstractNonRest_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     transitions = []
@@ -3753,11 +3678,11 @@ AbstractNonRest_Type._Automaton = _BuildAutomaton_4()
 
 
 
-MachineTypeModelSerialNumber_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MachineType'), CTD_ANON, scope=MachineTypeModelSerialNumber_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8)))
+MachineTypeModelSerialNumber_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MachineType'), CTD_ANON, scope=MachineTypeModelSerialNumber_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8)))
 
-MachineTypeModelSerialNumber_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Model'), CTD_ANON_, scope=MachineTypeModelSerialNumber_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12)))
+MachineTypeModelSerialNumber_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'Model'), CTD_ANON_, scope=MachineTypeModelSerialNumber_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12)))
 
-MachineTypeModelSerialNumber_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber'), CTD_ANON_2, scope=MachineTypeModelSerialNumber_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12)))
+MachineTypeModelSerialNumber_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber'), CTD_ANON_2, scope=MachineTypeModelSerialNumber_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12)))
 
 def _BuildAutomaton_5 ():
     # Remove this helper function from the namespace after it is invoked
@@ -3766,27 +3691,27 @@ def _BuildAutomaton_5 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 148, 12))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 148, 12))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 176, 20))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 176, 20))
     counters.add(cc_1)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
+    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'MachineType')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8))
+    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'MachineType')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8))
     st_1 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_1)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Model')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12))
+    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Model')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12))
     st_2 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_2)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_1, False))
-    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12))
+    symbol = pyxb.binding.content.ElementUse(MachineTypeModelSerialNumber_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12))
     st_3 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_3)
     transitions = []
@@ -3813,19 +3738,19 @@ MachineTypeModelSerialNumber_Type._Automaton = _BuildAutomaton_5()
 
 
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'SystemName'), CTD_ANON_3, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 79, 8)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'SystemName'), CTD_ANON_3, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 79, 8)))
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber'), CTD_ANON_9, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 96, 12)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber'), CTD_ANON_9, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 96, 12)))
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'LongTermMonitorEnabled'), CTD_ANON_4, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 113, 12)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'LongTermMonitorEnabled'), CTD_ANON_4, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 113, 12)))
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AggregationEnabled'), CTD_ANON_5, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 130, 12)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AggregationEnabled'), CTD_ANON_5, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 130, 12)))
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'ShortTermMonitorEnabled'), CTD_ANON_6, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 147, 12)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'ShortTermMonitorEnabled'), CTD_ANON_6, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 147, 12)))
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'ComputeLTMEnabled'), CTD_ANON_7, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'ComputeLTMEnabled'), CTD_ANON_7, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12)))
 
-ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AssociatedManagedSystem'), CTD_ANON_8, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 181, 12)))
+ManagedSystemPcmPreference_Type._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'AssociatedManagedSystem'), CTD_ANON_8, scope=ManagedSystemPcmPreference_Type, location=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 181, 12)))
 
 def _BuildAutomaton_6 ():
     # Remove this helper function from the namespace after it is invoked
@@ -3834,45 +3759,45 @@ def _BuildAutomaton_6 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 117, 12))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 117, 12))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 243, 20))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 243, 20))
     counters.add(cc_1)
-    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12))
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12))
     counters.add(cc_2)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'SystemName')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 79, 8))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'SystemName')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 79, 8))
     st_1 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_1)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 96, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'MachineTypeModelSerialNumber')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 96, 12))
     st_2 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_2)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'LongTermMonitorEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 113, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'LongTermMonitorEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 113, 12))
     st_3 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_3)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AggregationEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 130, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AggregationEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 130, 12))
     st_4 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_4)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'ShortTermMonitorEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 147, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'ShortTermMonitorEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 147, 12))
     st_5 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_5)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'ComputeLTMEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'ComputeLTMEnabled')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 164, 12))
     st_6 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_6)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_1, False))
-    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AssociatedManagedSystem')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/ManagedSystemPcmPreference.xsd', 181, 12))
+    symbol = pyxb.binding.content.ElementUse(ManagedSystemPcmPreference_Type._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'AssociatedManagedSystem')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/ManagedSystemPcmPreference.xsd', 181, 12))
     st_7 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_7)
     transitions = []
@@ -3926,27 +3851,27 @@ def _BuildAutomaton_7 ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonGlobals.xsd', 148, 12))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonGlobals.xsd', 148, 12))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 176, 20))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 176, 20))
     counters.add(cc_1)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
+    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Metadata')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/common/inc/CommonMetaData.xsd', 88, 12))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'MachineType')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8))
+    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'MachineType')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 78, 8))
     st_1 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_1)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Model')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12))
+    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'Model')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 95, 12))
     st_2 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_2)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_1, False))
-    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/pmc.schema.pcm-8.8.5.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12))
+    symbol = pyxb.binding.content.ElementUse(CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, 'SerialNumber')), pyxb.utils.utility.Location('/home/afcastel/hmc_rest_api/code/hmc8.4/pmc.schema.pcm-8.8.4.0/schema/pcm/MachineTypeModelSerialNumber.xsd', 112, 12))
     st_3 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_3)
     transitions = []

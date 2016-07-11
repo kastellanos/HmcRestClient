@@ -16,11 +16,16 @@
 
 
 from src.main.HmcRestClient import *
+from src.main.Report import *
 from src.main.ManagedSystem import *
 from src.main.Cluster import *
 from src.main.PerformanceCapacityMonitor import *
 import sys
 import os
+
+if not HardwareManagementConsole.table_exists():
+    HardwareManagementConsole.create_table()
+
 
 directory = os.path.dirname(os.path.dirname(__file__))
 def menu():
@@ -28,7 +33,8 @@ def menu():
     This provides the main menu for the client to interract with the hmc
     """
     client = HmcRestClient()
-    client.logon()
+
+    credentials = client.logon_menu()
     back_to_menu()
     while True:
         try:
@@ -50,7 +56,7 @@ def menu():
                     print_list = ['Managed System Operations', 'VirtualSwitch',
                                   'VirtualNetwork', 'NetworkBridge',
                                   'Logical Partition', 'VirtualIOServer',
-                                  'SRIOV Ethernet PhysicalPort', 'Return to MainMenu','Help','Exit']
+                                  'SRIOV Ethernet PhysicalPort', 'Return to MainMenu','Help','Exit','Report']
                     # select any managed system children
                     choice = int(print_obj.print_on_screen(print_list))
                     if choice == 8:
@@ -66,6 +72,12 @@ def menu():
                         back_to_menu()
                     elif choice == 10:
                         sys.exit(1)
+                    elif choice == 11:
+
+                        boolean = report_children(credentials)
+                        if not boolean:
+                            cls()
+                            break
                     else:
                         print("\nTry again using valid option")
                         back_to_menu()
