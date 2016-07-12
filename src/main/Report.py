@@ -8,11 +8,7 @@ from src.logical_partition.LogicalPartition import LogicalPartition
 directory = os.path.dirname(os.path.dirname(__file__))
 from src.utility.ExcelUtil import ExcelUtil
 def report_children(credentials):
-    if not LogicalPartition.table_exists():
-        LogicalPartition.create_table()
-    else:
-        LogicalPartition.drop_table()
-        LogicalPartition.create_table()
+
 
     cls()
     ip = str(credentials.ip)
@@ -29,9 +25,11 @@ def report_children(credentials):
         if x == 1:
             cls()
             popullate_database( credentials.name, ip, x_api_session )
+            back_to_menu()
         elif x== 2:
             cls()
             generate_report(credentials.name)
+            back_to_menu()
         elif x == 5:
             cls()
             return True
@@ -47,19 +45,39 @@ def report_children(credentials):
             back_to_menu()
 
 def generate_report( name ):
+    path = None
+    filen= None
+    while True:
+        path = input("Ingrese la ruta para guardar el archivo : ")
+        filen = input("Ingrese el nombre del archivo : ")
+        if path is not None and filen is not None:
+            break;
+        else:
+            cls()
+            print("**Ingrese datos validos**")
+    if path[len(path)-1]=="/":
+        #Do nothing
+        pass
+    else:
+        path +="/"
+    filen +=".xlsx"
     CPU = 0
     S_CPU = 1
     MEM = 2
     cliente = {}
+    valid_state = ["running"]
+    sum_total = [0.0,0.0,0.0]
     for i in ManagedSystem.select().where(ManagedSystem.associated_hmc==name):
         # verificar!!!! Id almacenado en lpar de associated con el id de managed system
         for k in LogicalPartition.select().where(LogicalPartition.associated_managed_system==i.id):
-            kname = extract_client( k )
-            if kname not in cliente:
-                cliente[kname] = [0.0,0.0,0.0]
-            cliente[kname][CPU] += k.desired_processors
-            cliente[kname][S_CPU] += k.desired_processing_units
-            cliente[kname][MEM] += k.desired_memory
+            if k.state in valid_state:
+                kname = extract_client( k )
+                if kname not in cliente:
+                    cliente[kname] = [0.0,0.0,0.0]
+                cliente[kname][CPU] += k.desired_processors
+                cliente[kname][S_CPU] += k.desired_processing_units
+                cliente[kname][MEM] += k.desired_memory
+
     write2excel = ExcelUtil()
     head_index = []
     head_column = ["DEDICATED CPU","SHARED CPU","MEMORY"]
@@ -67,8 +85,13 @@ def generate_report( name ):
     for i in cliente.keys():
         head_index.append(i)
         data_column.append(cliente[i])
+        sum_total[CPU]+= cliente[i][CPU]
+        sum_total[MEM] += cliente[i][MEM]
+        sum_total[S_CPU] += cliente[i][S_CPU]
+    data_column.append(sum_total)
+    head_index.append("Suma total")
     write2excel.add( head_index,head_column,data_column,name)
-    write2excel.writeExcel()
+    write2excel.writeExcel(file_path=path,file_name=filen)
     print("Report generated in ",write2excel.file_path," as ",write2excel.file_name)
 
 
@@ -89,7 +112,11 @@ def popullate_database( name, ip, x_api_session ):
     else:
         ManagedSystem.drop_table()
         ManagedSystem.create_table()
-
+    if not LogicalPartition.table_exists():
+        LogicalPartition.create_table()
+    else:
+        LogicalPartition.drop_table()
+        LogicalPartition.create_table()
     managedsystem_object = ListManagedSystem.ListManagedSystem()
     object_list = managedsystem_object.list_ManagedSystem(ip, x_api_session)
     print( object_list )
@@ -154,46 +181,7 @@ def popullate_database( name, ip, x_api_session ):
                                             )
 
 
-            """LogicalPartition.create(id=j.PartitionID.value(),
-                                    name=j.PartitionName.value(),
-                                    type=j.PartitionType.value(),
-                                    state=j.PartitionState.value(),
-                                    uuid=j.PartitionUUID.value(),
-                                    associated_managed_system=j.AssociatedManagedSystem.href,
-                                    maximum_memory=j.PartitionMemoryConfiguration.MaximumMemory.value(),
-                                    desired_memory=j.PartitionMemoryConfiguration.DesiredMemory.value(),
-                                    minimum_memory=j.PartitionMemoryConfiguration.MinimumMemory.value(),
-                                    has_dedicated_processors=j.PartitionProcessorConfiguration.HasDedicatedProcessors.value(),
-                                    maximum_processors=0,
-                                    desired_processors=0,
-                                    minimum_processors=0,
-                                    maximum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MaximumProcessingUnits.value(),
-                                    desired_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.DesiredProcessingUnits.value(),
-                                    minimum_processing_units=j.PartitionProcessorConfiguration.SharedProcessorConfiguration.MinimumProcessingUnits.value()
-                                    )
-            """
-    """
-    try:
-        print("Start object list")
-        for i in range(0, len(object_list)):
-            managed_object = ManagedSystem(id=object_list[i].Metadata.Atom.AtomID.value(),name=object_list[i].SystemName.value(),
-                                           machine_type=object_list[i].MachineTypeModelAndSerialNumber.MachineType.value(),
-                                           model=object_list[i].MachineTypeModelAndSerialNumber.Model.value(),
-                                           associated_hmc=name
-                                           )
-            print( managed_object )
-            managed_object.save()
 
-
-        else:
-            print("\nTry again using valid option")
-    except (TypeError, AttributeError, IndexError):
-        log_object.log_warn("No ManagedSystems available ")
-
-    1. Get Managed Systems list
-    2. Get Logical Partitions from Managed Systems list
-
-    """
     for i in ManagedSystem.select():
         print(i.name,i.id)
 
