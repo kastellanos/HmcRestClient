@@ -35,7 +35,7 @@ def report_children(credentials):
             return True
         elif x == 6:
             cls()
-            return False
+            sys.exit(1)
         elif x == 7:
             print(open(directory + "/help/Report/ReportOptions.txt").read())
         elif x == 8:
@@ -96,7 +96,7 @@ def generate_report( name ):
 
 
 def extract_client(lpar):
-    domain_list = ["co", "com", "local"]
+    domain_list = ["co", "com", "local","org"]
     name = None
     for i in lpar.name.split(".")[1:]:
         if i.strip() not in domain_list:
